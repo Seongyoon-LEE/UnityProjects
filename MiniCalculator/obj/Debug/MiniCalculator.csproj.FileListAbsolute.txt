@@ -1,0 +1,10 @@
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.csproj.AssemblyReference.cache
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.Form1.resources
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.Properties.Resources.resources
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.csproj.GenerateResource.cache
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\bin\Debug\MiniCalculator.exe.config
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\bin\Debug\MiniCalculator.exe
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\bin\Debug\MiniCalculator.pdb
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.exe
+C:\Users\WD\Documents\CSharpBase\MiniCalculator\obj\Debug\MiniCalculator.pdb

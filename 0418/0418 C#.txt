@@ -1,0 +1,13 @@
+C# 기초
+int = 정수형식 자료형 4byte
+parse = 분석하다.
+int.Parse = 인트형으로변환하다
+Console.ReadLine() = 문자열로 입력 받음
+Console.WriteLine() = 콘솔에 텍스트 띄우는 함수 
+ctr+k+c = 전체 주석처리
+ctr+k+u = 전체 주석취소
+솔루션 = 프로젝트의 단위
+cw + tab + tab = 
+svm +tab+tab = static void Main(string[] args) {} 자동생성 
+#region ~ #endregion = 단 묶음
+? = null 허용 
