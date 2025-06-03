@@ -1,0 +1,23 @@
+1.class NameCard
+{
+    public int Age { get; set; } = 24;
+    public string Name { get; set; } = "상현";
+    internal class MainApp7
+    {
+        static void Main(string[] args)
+        {
+            NameCard MyCard = new NameCard();
+            Console.WriteLine($"나이 : {MyCard.Age}");
+            Console.WriteLine($"이름 : {MyCard.Name}");
+        }
+    }
+}
+
+2.static void Main(string[] args)
+{
+    var nameCard = new { name = "박상현", age = 17 };
+    Console.WriteLine($"이름:{nameCard.name} 나이:{nameCard.age}");
+
+    var complex = new { Real = 3, Imagnary = -12 };
+    Console.WriteLine($"Real:{complex.Real}나이:{complex.Imagnary}");
+}
