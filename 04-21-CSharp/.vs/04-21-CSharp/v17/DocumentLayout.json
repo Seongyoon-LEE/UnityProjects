@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WD\\Documents\\CSharpBase\\04-21-CSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{999463FB-BCC3-4D4C-B7F3-A360C0E3F34D}|04-21-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-21-csharp\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{999463FB-BCC3-4D4C-B7F3-A360C0E3F34D}|04-21-CSharp.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-21-CSharp\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-21-CSharp\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwDMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T07:45:37.149Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

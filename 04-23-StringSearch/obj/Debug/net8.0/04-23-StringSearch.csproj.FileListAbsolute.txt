@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\bin\Debug\net8.0\04-23-StringSearch.exe
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\bin\Debug\net8.0\04-23-StringSearch.deps.json
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\bin\Debug\net8.0\04-23-StringSearch.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\bin\Debug\net8.0\04-23-StringSearch.dll
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\bin\Debug\net8.0\04-23-StringSearch.pdb
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.dll
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\refint\04-23-StringSearch.dll
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.pdb
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\04-23-StringSearch.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\04-23-StringSearch\obj\Debug\net8.0\ref\04-23-StringSearch.dll

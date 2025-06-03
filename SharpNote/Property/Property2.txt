@@ -1,0 +1,92 @@
+📘 BirthdayInfo 클래스 완전 정복!
+
+이번에는 누군가의 "이름", "생일", "나이"를 저장하고 계산하는 클래스를 만들어봤어!
+C#에서는 클래스를 만들어서 정보를 저장하고 꺼내 쓰는 걸 아주 쉽게 할 수 있어 😊
+
+---
+
+✅ 1. 클래스 구조 설명
+
+```csharp
+class BirthdayInfo
+{
+    private string? name;
+    private DateTime birthday;
+
+    public string? Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    public DateTime Birthday
+    {
+        get { return birthday; }
+        set { birthday = value; }
+    }
+
+    public int Age
+    {
+        get
+        {
+            return new DateTime(DateTime.Now.Subtract(Birthday).Ticks).Year;
+        }
+    }
+}
+```
+📝 쉽게 설명하자면:
+- `name`은 사람 이름을 저장하는 곳이야.
+- `birthday`는 생일을 저장해.
+- `Age`는 지금 날짜에서 생일을 빼서 나이를 계산해주는 **읽기 전용 프로퍼티**야! (get만 있고 set 없음)
+
+✔ `DateTime.Now.Subtract(Birthday).Ticks` → 생일부터 지금까지 몇 틱(Tick)이 지났는지 알려줘.
+✔ 그걸 다시 `DateTime` 객체로 만든 후 `.Year`만 꺼내면 "몇 년이 지났는지", 즉 나이가 나와!
+
+---
+
+✅ 2. 사용 예시
+
+```csharp
+static void Main(string[] args)
+{
+    BirthdayInfo birthday = new BirthdayInfo();
+    birthday.Name = "카리나";
+    birthday.Birthday = new DateTime(1998, 10, 30);
+
+    Console.WriteLine($"이름: {birthday.Name}");
+    Console.WriteLine($"생일: {birthday.Birthday.ToShortDateString()}");
+    Console.WriteLine($"나이: {birthday.Age}세");
+}
+```
+
+🧠 이렇게 하면 출력은 다음과 같아:
+```
+이름: 카리나
+생일: 1998-10-30
+나이: 26세 (※ 현재 날짜 기준)
+```
+
+---
+
+✅ 3. 게임에 적용하면?
+이런 시스템은 **캐릭터 정보**, **NPC 정보**, **생일 이벤트 시스템** 등에 아주 유용해!
+
+예)
+```csharp
+if (npc.Birthday.Month == DateTime.Now.Month && npc.Birthday.Day == DateTime.Now.Day)
+{
+    Console.WriteLine($"오늘은 {npc.Name}의 생일이야! 🎂");
+    // 생일 선물 주기, 특별 대사 출력 등 가능!
+}
+```
+
+---
+
+✅ 정리!
+- 프로퍼티로 `Name`, `Birthday`를 안전하게 관리할 수 있어.
+- `Age`는 자동으로 계산되는 읽기 전용 정보야.
+- 게임 캐릭터 정보 시스템에 아주 잘 어울려!
+
+---
+
+🎮 게임에서도 캐릭터 생일 이벤트 시스템 만들어보고 싶지? 바로 이런 구조로 만들면 돼! 😄

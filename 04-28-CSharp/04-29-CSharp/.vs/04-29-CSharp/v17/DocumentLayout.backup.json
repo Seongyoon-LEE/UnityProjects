@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-29-CSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79117CB4-39DB-4D4E-B752-F3FA19618CD5}|04-29-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-29-csharp\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79117CB4-39DB-4D4E-B752-F3FA19618CD5}|04-29-CSharp.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79117CB4-39DB-4D4E-B752-F3FA19618CD5}|04-29-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-29-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79117CB4-39DB-4D4E-B752-F3FA19618CD5}|04-29-CSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 194,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainApp.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-29-CSharp\\MainApp.cs",
+              "RelativeDocumentMoniker": "MainApp.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-29-CSharp\\MainApp.cs*",
+              "RelativeToolTip": "MainApp.cs*",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwEMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:19:39.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-29-CSharp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-29-CSharp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:33:48.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

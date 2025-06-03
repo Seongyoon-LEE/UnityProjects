@@ -1,0 +1,86 @@
+📘 자동 구현 프로퍼티 (Auto-Implemented Property)
+
+이번엔 C#에서 아주 깔끔하게 값을 저장하는 방법, 바로 **자동 구현 프로퍼티**에 대해 배워볼게! 😊
+
+---
+
+✅ 1. 자동 구현 프로퍼티란?
+기존에는 값을 저장하려면 이렇게 길게 써야 했어:
+
+```csharp
+private string name;
+public string Name
+{
+    get { return name; }
+    set { name = value; }
+}
+```
+
+하지만! C# 3.0부터는 자동으로 만들어주는 방식이 생겼어! (우리는 C# 7.0 이상이니까 당연히 사용 가능)
+
+```csharp
+public string Name { get; set; }
+```
+
+👉 이게 바로 **자동 구현 프로퍼티**!  
+`get`과 `set`을 쓰면, 컴파일러가 자동으로 내부 필드를 만들어줘서 우리가 따로 만들 필요 없어!
+
+---
+
+✅ 2. 예제: 명함 정보(NameCard)
+
+```csharp
+public class NameCard
+{
+    public string? Name { get; set; }           // 자동으로 name 필드를 생성
+    public string? PhoneNumber { get; set; }    // 자동으로 phoneNumber 필드를 생성
+}
+```
+
+---
+
+✅ 3. 사용 예시
+
+```csharp
+NameCard nameCard = new NameCard();
+nameCard.Name = "카리나";
+nameCard.PhoneNumber = "010-1234-5678";
+
+Console.WriteLine($"이름: {nameCard.Name}");
+Console.WriteLine($"폰번호: {nameCard.PhoneNumber}");
+```
+
+👉 실행 결과:
+```
+이름: 카리나
+폰번호: 010-1234-5678
+```
+
+---
+
+✅ 4. 게임에서는 어디에 쓸 수 있을까?
+자동 구현 프로퍼티는 아래처럼 **간단한 정보 저장용** 클래스에 딱 좋아!
+
+🎮 예시: NPC 정보
+```csharp
+public class NPC
+{
+    public string Name { get; set; }
+    public string Dialogue { get; set; }
+    public string Location { get; set; }
+}
+```
+
+✔ 대사나 이름처럼 그냥 저장만 해두고 꺼내 쓰면 되는 값엔 자동 구현 프로퍼티가 짱이야!
+
+---
+
+✅ 정리!
+- 자동 구현 프로퍼티는 내부 필드를 자동으로 만들어줘서 **코드가 깔끔**해져!
+- 데이터를 단순히 저장하고 꺼내기만 할 땐 무조건 추천! 👍
+- 게임 캐릭터, NPC 정보, 설정값 저장 등에 자주 사용돼
+
+---
+
+🧠 너무 간단해서 무시하지 말자!  
+실무에서도 **자동 구현 프로퍼티**는 정말 많이 쓰여! 😄

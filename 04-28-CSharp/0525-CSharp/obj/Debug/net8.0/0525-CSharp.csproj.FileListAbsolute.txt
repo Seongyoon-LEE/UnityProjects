@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\bin\Debug\net8.0\0525-CSharp.exe
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\bin\Debug\net8.0\0525-CSharp.deps.json
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\bin\Debug\net8.0\0525-CSharp.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\bin\Debug\net8.0\0525-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\bin\Debug\net8.0\0525-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\refint\0525-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\0525-CSharp.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\0525-CSharp\obj\Debug\net8.0\ref\0525-CSharp.dll

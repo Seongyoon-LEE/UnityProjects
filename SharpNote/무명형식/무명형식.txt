@@ -1,0 +1,84 @@
+📘 무명 형식 (Anonymous Type)
+
+이번엔 C#의 특별한 기능인 **무명 형식**에 대해 배워볼 거야!  
+무명 형식은 이름 없는 클래스를 만들어서 딱 한 번만 쓸 때 아주 유용해 😎
+
+---
+
+✅ 1. 무명 형식이란?
+✔ 클래스 이름을 따로 만들지 않고도 **한 번만 쓸 임시 객체**를 만들 수 있어!  
+✔ `var`와 함께 쓰고, 중괄호 `{}` 안에 프로퍼티를 정의해!
+
+예시:
+```csharp
+var myInstance = new { Name = "이승엽", Age = 47 };
+```
+
+👉 여기서 `myInstance`는 이름이 없는 클래스를 기반으로 만들어진 객체야.
+
+---
+
+✅ 2. 무명 형식 사용 예시
+
+```csharp
+var myInstance = new { Name = "이승엽", Age = 47 };
+Console.WriteLine($"Name: {myInstance.Name}");
+Console.WriteLine($"Age: {myInstance.Age}");
+```
+
+📌 출력 결과:
+```
+Name: 이승엽
+Age: 47
+```
+
+✔ `myInstance.Name`, `myInstance.Age`로 값에 접근할 수 있어.
+
+---
+
+✅ 3. 배열 포함된 무명 형식 예시
+
+```csharp
+var b = new { Subject = "수학", Scores = new int[] { 90, 80, 70, 60 } };
+Console.WriteLine($"Subject {b.Subject}, Scores:");
+foreach (var score in b.Scores)
+{
+    Console.WriteLine(score);
+}
+```
+
+📌 출력 결과:
+```
+Subject 수학, Scores:
+90
+80
+70
+60
+```
+
+✔ 배열도 같이 담을 수 있어! 아주 강력하지? 😄
+
+---
+
+✅ 4. 게임에서는 어떻게 쓸 수 있을까?
+
+🎮 예: 디버그용 임시 데이터 만들기
+```csharp
+var enemy = new { Name = "슬라임", HP = 50, Position = new { X = 2, Y = 3 } };
+Console.WriteLine($"몬스터: {enemy.Name}, HP: {enemy.HP}, 위치: ({enemy.Position.X}, {enemy.Position.Y})");
+```
+
+✔ 클래스 만들기 귀찮을 때, 테스트나 로그용으로 딱 좋아!
+
+---
+
+✅ 정리!
+
+- 무명 형식은 이름 없는 클래스 객체를 만드는 기능이야.
+- `var`로 변수 선언하고 `{}` 안에 프로퍼티들을 넣으면 끝!
+- 주로 **임시 객체**, **디버깅**, **LINQ 결과 반환** 등에 자주 쓰여.
+- 단점: 나중에 재사용이 불가능해 (클래스 이름이 없으니까!)
+
+---
+
+🎉 무명 형식은 코드 테스트나 임시 데이터 만들 때 아주 유용하니까 꼭 기억하자! 😄

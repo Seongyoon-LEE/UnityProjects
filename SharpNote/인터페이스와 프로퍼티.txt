@@ -1,0 +1,107 @@
+📘 인터페이스 + 클래스 + 무명형식 정리편
+
+이번엔 C#에서 **인터페이스**와 **클래스**, 그리고 무명형식을 함께 활용하는 예제를 살펴볼 거야!  
+게임 개발에서도 정보 묶음을 다룰 때 정말 자주 쓰는 패턴이야 😊
+
+---
+
+✅ 1. 인터페이스(INamedValue)란?
+```csharp
+interface INamedValue
+{
+    string Name { get; set; }
+    string Value { get; set; }
+}
+```
+
+✔ 인터페이스는 "이런 속성이 있어야 해!" 라고 규칙을 정해주는 틀이야.
+✔ 실제 동작은 인터페이스를 구현한 클래스에서 작성해야 해!
+
+---
+
+✅ 2. 인터페이스를 구현한 클래스: NamedValue
+
+```csharp
+class NamedValue : INamedValue
+{
+    public string? Name { get; set; }
+    public string? Value { get; set; }
+}
+```
+
+✔ `Name`, `Value` 프로퍼티를 자동 구현 프로퍼티로 구현했어.
+✔ 이제 이 클래스는 INamedValue 규칙을 지킨 거야!
+
+---
+
+✅ 3. 객체 생성과 초기화 (객체 초기화 구문 사용)
+
+```csharp
+NamedValue name = new NamedValue()
+{
+    Name = "이름",
+    Value = "이성윤"
+};
+NamedValue height = new NamedValue()
+{
+    Name = "키",
+    Value = "180"
+};
+NamedValue weight = new NamedValue()
+{
+    Name = "몸무게",
+    Value = "80kg"
+};
+```
+
+✔ 클래스를 생성하면서 프로퍼티 값을 한 번에 설정하는 깔끔한 문법!
+
+---
+
+✅ 4. 출력 결과
+
+```csharp
+Console.WriteLine($"{name.Name} : {name.Value}");
+Console.WriteLine($"{height.Name} : {height.Value}");
+Console.WriteLine($"{weight.Name} : {weight.Value}");
+```
+
+📌 출력 예시:
+```
+이름 : 이성윤
+키 : 180
+몸무게 : 80kg
+```
+
+---
+
+✅ 5. 게임에선 이렇게 쓸 수 있어!
+
+🎮 예: NPC 속성 정의
+```csharp
+NamedValue npcName = new NamedValue { Name = "이름", Value = "깨빈" };
+NamedValue npcJob = new NamedValue { Name = "직업", Value = "모험가" };
+NamedValue npcLevel = new NamedValue { Name = "레벨", Value = "12" };
+
+Console.WriteLine($"{npcName.Name} : {npcName.Value}");
+Console.WriteLine($"{npcJob.Name} : {npcJob.Value}");
+Console.WriteLine($"{npcLevel.Name} : {npcLevel.Value}");
+```
+
+✔ 같은 구조를 가진 데이터를 쉽게 묶어 출력하거나 저장할 수 있어!
+
+---
+
+✅ 정리!
+
+| 개념 | 설명 |
+|------|------|
+| 인터페이스 | "이런 속성이 있어야 해" 라는 틀 |
+| 클래스 | 인터페이스를 실제로 구현함 |
+| 객체 초기화 | `new 클래스 { 프로퍼티 = 값 }` 형태로 깔끔하게 생성 |
+| 무명형식 | 이름 없이 잠깐 쓰는 값 묶음 (위에서는 주석 처리된 코드 참고!) |
+
+---
+
+🎉 이런 구조는 게임의 상태 정보, NPC 속성, 설정값 저장 등에 정말 유용해!  
+잘 기억해두면 실무나 프로젝트에서 아주 쓸모 있을 거야! 😎

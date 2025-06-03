@@ -1,0 +1,90 @@
+1.아래의 클래스는 복합데이터 형식이면서 참조형식이다.
+   얕은 복사 깊은복사에 대해 설명 하고 아래의 클래스를 
+  깊은 복사 로 바꾸고 메인메서드에서 결과 값을 출력 하세요
+public class YourClass
+{
+  public int myField1;
+  public int myField2;
+}
+얕은 복사 :
+YourClass source = new YourClass();
+source.myField1 = 10;
+source.myField2 = 20;
+YourClass target = source;
+target.myField2 = 30;
+WriteLine($"source.Field1 : {source.Field1}, source.Field2 : {source.Field2}")
+얕은 복사는 클래스는 참조형이기 때문에 참조만 복사한다 -> 같은 주소를 가리키는 다른 변수
+target과 source는 같은 객체를 가리키고 있어서 source.num2는 30이 된다.
+깊은 복사:
+public YourClass2 DeepCopy()
+{
+    YourClass2 newCopy = new YourClass2();
+    newCopy.myField1 = this.myField1;
+    newCopy.myField2 = this.myField2;
+    return newCopy;
+}
+YourClass2 source2 = new YourClass2();
+source2.myField1 = 10;
+source2.myField2 = 20;
+
+MyClass2 target2 = source2.DeepCopy(); // 깊은 복사
+target2.num2 = 30;
+
+값이 복사된것일뿐, 서로 독립된 객체니까 20이 된다.
+
+2. 아래의 클래스의 생성자는 왜 비효율적인지 설명하고
+    this 생성자를 만들고 메인메서드에 출력 결과 나오게 하세요 
+public class YourClass 
+{
+    int a, b, c;
+    public YourClass()
+    {
+        this.a = 5425;
+        Console.WriteLine("MyClass()");
+    }
+    public YourClass(int b) : this()
+    {
+       // this.a = 5425;
+        this.b = b;
+        Console.WriteLine("MyClass(b)");
+    }
+    public YourClass(int b, int c) : this(b)
+    {
+        //this.a = 5425;
+        //this.b = b;
+        this.c = c;
+        Console.WriteLine("MyClass(b,c)");
+    }
+    public void PrintField()
+    {
+        Console.WriteLine($"a : {a}, b : {b}, c : {c}");
+    }
+}
+internal class MainApp2
+{
+    static void Main(string[] args)
+    {
+        YourClass a = new YourClass();
+        a.printFeild();
+        Console.WriteLine();
+        YourClass b = new YourClass(10);
+        b.printFeild();
+        Console.WriteLine();
+        YourClass c = new YourClass(10, 20);
+        c.printFeild();
+    }
+
+}
+3. 유니티에서 광선의 자료형과 광선에 접촉 충돌을 검사를 해주는 자료형 두가지를 적으세요
+-광선의 자료형 = Ray
+-접촉 충돌 검사 자료형 = RaycastHit
+
+4. 유니티에서 Walkable 즉 NPC가 다닐 수 있는 지역이나 구역을 지정 하려면 어떻게 해야 하는 지 서술 하세요
+-지정할 지역을 선택후 -> window -> AI -> Navigation(obsolate) ->object -> Navigation static만 체크 -> Naviagation Area를 Walkable로 설정
+->Bake
+
+5.유니티에서 NavMeshAgent역활에 대해 서술하고 AutoBreaking은 어떤 역활을 하는 지 서술 하세요
+-NavMeshAgent역활 : 유니티의 내비게이션 시스템에서
+캐릭터(AI)가 지형을 따라 목적지까지 자동으로 이동하도록 해주는 컴포넌트
+-AutoBreaking : 목적지에 가까워질수록 점점 천천히 멈춘다
+(브레이크 밟듯이 서서히 감속)

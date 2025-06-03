@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\bin\Debug\net8.0\04-28-CSharp.exe
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\bin\Debug\net8.0\04-28-CSharp.deps.json
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\bin\Debug\net8.0\04-28-CSharp.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\bin\Debug\net8.0\04-28-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\bin\Debug\net8.0\04-28-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\refint\04-28-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\04-28-CSharp.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\04-28-CSharp\04-28-CSharp\obj\Debug\net8.0\ref\04-28-CSharp.dll

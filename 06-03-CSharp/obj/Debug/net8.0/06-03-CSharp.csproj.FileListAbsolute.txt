@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\bin\Debug\net8.0\06-03-CSharp.exe
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\bin\Debug\net8.0\06-03-CSharp.deps.json
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\bin\Debug\net8.0\06-03-CSharp.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\bin\Debug\net8.0\06-03-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\bin\Debug\net8.0\06-03-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\refint\06-03-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\06-03-CSharp.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\06-03-CSharp\obj\Debug\net8.0\ref\06-03-CSharp.dll

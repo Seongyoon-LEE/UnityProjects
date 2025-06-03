@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\bin\Debug\net8.0\04-18-CSharp.exe
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\bin\Debug\net8.0\04-18-CSharp.deps.json
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\bin\Debug\net8.0\04-18-CSharp.runtimeconfig.json
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\bin\Debug\net8.0\04-18-CSharp.dll
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\bin\Debug\net8.0\04-18-CSharp.pdb
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.dll
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\refint\04-18-CSharp.dll
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.pdb
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\04-18-CSharp.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharp기초\04-18-CSharp\obj\Debug\net8.0\ref\04-18-CSharp.dll

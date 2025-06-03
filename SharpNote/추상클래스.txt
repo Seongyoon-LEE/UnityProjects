@@ -1,0 +1,123 @@
+
+📘 C# 추상 클래스 (abstract class) 예제 분석 및 정리
+
+────────────────────────────────────────────
+✅ 추상 클래스란?
+────────────────────────────────────────────
+- 클래스인데, '직접 인스턴스 생성은 불가능'함 (`new`로 못 만듦)
+- **공통 동작(일부 구현) + 필수 구현(추상 메서드)**를 섞어서 제공 가능
+- 자식 클래스는 반드시 '추상 메서드'를 구현해야 함
+- 공통된 기능을 공유하면서, 자식마다 특화된 동작도 만들 수 있음
+- Unity에서도 '캐릭터 기본 클래스', '공통 몬스터 베이스' 등으로 자주 쓰임
+
+────────────────────────────────────────────
+✅ 예제 코드 분석
+────────────────────────────────────────────
+
+```csharp
+abstract class AbstractBase
+{
+    protected void PrivateMethodA()
+    {
+        Console.WriteLine("AbstractBase.PrivateMethodA");
+    }
+
+    public void PublicMethodA()
+    {
+        Console.WriteLine("AbstractBase.PublicMethodA");
+    }
+
+    public abstract void AbstractMethodA();
+}
+```
+
+- `PrivateMethodA()`는 `protected`라서 상속받은 클래스 내부에서만 접근 가능
+- `PublicMethodA()`는 구현된 일반 메서드
+- `AbstractMethodA()`는 **반드시 자식 클래스에서 override 해야 함**
+- 추상 메서드가 하나라도 있으면 해당 클래스는 abstract 이어야 함
+
+```csharp
+class Derived : AbstractBase
+{
+    public override void AbstractMethodA()
+    {
+        Console.WriteLine("Derived.AbstractMethodA");
+    }
+}
+```
+
+- 추상 클래스를 상속받은 일반 클래스
+- 반드시 `AbstractMethodA()`를 구현해야 함
+
+```csharp
+AbstractBase obj = new Derived();
+obj.PublicMethodA();
+obj.AbstractMethodA();
+```
+
+- **부모 타입으로 자식 객체를 참조하는 다형성 사용**
+- 부모 메서드 호출 (`PublicMethodA`)
+- 자식에서 구현한 추상 메서드 호출 (`AbstractMethodA`)
+
+────────────────────────────────────────────
+✅ 출력 결과
+────────────────────────────────────────────
+AbstractBase.PublicMethodA
+Derived.AbstractMethodA
+
+────────────────────────────────────────────
+✅ 피드백 및 개선 포인트
+────────────────────────────────────────────
+
+1. ✅ 추상 클래스 설계 잘 되어 있음
+2. 🔍 `PrivateMethodA()`는 protected로 써서 자식 클래스에서 테스트해보면 좋음
+3. ✅ 다형성 구조 (`AbstractBase obj = new Derived()`)는 OOP의 핵심 패턴
+4. ❗ 예제 확장을 위해 추상 메서드를 2~3개로 늘려보면 더 명확함
+5. ✅ Unity에서 자주 쓰는 구조 (예: `CharacterBase`, `EnemyBase`, `WeaponBase`)
+
+────────────────────────────────────────────
+✅ 확장 예제: 다양한 캐릭터를 위한 추상 클래스
+────────────────────────────────────────────
+
+```csharp
+abstract class Character
+{
+    public abstract void Move();
+    public abstract void Attack();
+
+    public void Heal()
+    {
+        Console.WriteLine("HP를 회복했습니다.");
+    }
+}
+
+class Warrior : Character
+{
+    public override void Move() => Console.WriteLine("전사가 달립니다.");
+    public override void Attack() => Console.WriteLine("검으로 공격!");
+}
+
+class Mage : Character
+{
+    public override void Move() => Console.WriteLine("마법사가 떠다닙니다.");
+    public override void Attack() => Console.WriteLine("파이어볼!");
+}
+```
+
+```csharp
+Character player = new Mage();
+player.Move();      // 마법사가 떠다닙니다.
+player.Attack();    // 파이어볼!
+player.Heal();      // HP를 회복했습니다.
+```
+
+> 🔥 이렇게 하면 다양한 직업군을 한 가지 `Character` 타입으로 다룰 수 있어요!
+
+────────────────────────────────────────────
+✅ 정리 한 줄 요약
+────────────────────────────────────────────
+
+- 추상 클래스는 "기본은 줄 테니, 중요한 건 네가 꼭 구현해!" 라는 부모 클래스입니다.
+- 일부 기능은 직접 구현하고, 일부는 자식에게 강제로 구현하게 합니다.
+- Unity에서 캐릭터/무기/몬스터의 공통기반 설계에 매우 자주 쓰이는 구조입니다.
+

@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\bin\Debug\net8.0\05-08-Inheritance.exe
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\bin\Debug\net8.0\05-08-Inheritance.deps.json
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\bin\Debug\net8.0\05-08-Inheritance.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\bin\Debug\net8.0\05-08-Inheritance.dll
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\bin\Debug\net8.0\05-08-Inheritance.pdb
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.dll
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\refint\05-08-Inheritance.dll
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.pdb
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\05-08-Inheritance.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\05-08-Inheritance\obj\Debug\net8.0\ref\05-08-Inheritance.dll

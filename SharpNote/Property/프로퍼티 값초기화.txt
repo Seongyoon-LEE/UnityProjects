@@ -1,0 +1,106 @@
+📘 자동구현 프로퍼티 + 기본값 + 계산 프로퍼티까지 한방에 정리!
+
+이번엔 자동구현 프로퍼티에 **기본값까지 설정하고**, 
+계산해서 알려주는 `Age` 프로퍼티까지 다뤄볼 거야! ✨
+
+---
+
+✅ 1. 코드 구조
+
+```csharp
+public class BirthdayInfo
+{
+    public string? Name { get; set; } = "UnKnown";  // 기본값 설정된 자동 구현 프로퍼티
+    public DateTime Birthday { get; set; } = new DateTime(1999, 10, 11);
+
+    public int Age
+    {
+        get
+        {
+            return new DateTime(DateTime.Now.Subtract(Birthday).Ticks).Year;
+        }
+    } // 읽기 전용 계산 프로퍼티
+}
+```
+
+---
+
+✅ 2. 주요 개념 정리
+
+🔹 `Name`과 `Birthday`는 자동 구현 프로퍼티야!  
+값을 따로 저장할 필드를 만들지 않아도 컴파일러가 자동으로 처리해줘!
+
+🔹 `= "UnKnown"`, `= new DateTime(...)`  
+👉 이렇게 기본값도 바로 줄 수 있어! 객체가 생성될 때 자동으로 들어감.
+
+🔹 `Age`는 읽기 전용 프로퍼티 (get만 있음)  
+생일에서 지금까지 몇 년이 흘렀는지 계산해서 알려주는 역할이야!
+
+```csharp
+return new DateTime(DateTime.Now.Subtract(Birthday).Ticks).Year;
+```
+
+👉 생일부터 지금까지 지난 시간의 'Ticks'를 이용해서 계산해!  
+이건 좀 어려울 수 있지만, 결국 결과는 "나이"가 돼!
+
+---
+
+✅ 3. 사용 예시
+
+```csharp
+BirthdayInfo birthday = new BirthdayInfo();
+Console.WriteLine($"Name: {birthday.Name}"); // 기본값: UnKnown
+Console.WriteLine($"birthday: {birthday.Birthday.ToShortDateString()}"); // 1999-10-11
+Console.WriteLine($"Age: {birthday.Age}세");
+
+birthday.Name = "카리나";
+birthday.Birthday = new DateTime(2000, 01, 17);
+
+Console.WriteLine($"Name : {birthday.Name}");
+Console.WriteLine($"birthday : {birthday.Birthday.ToShortDateString()}");
+Console.WriteLine($"Age : {birthday.Age}세");
+```
+
+📌 출력 결과 예시:
+```
+Name: UnKnown
+birthday: 1999-10-11
+Age: 25세
+
+Name : 카리나
+birthday : 2000-01-17
+Age : 25세
+```
+
+---
+
+✅ 4. 게임에선 어디에 쓸 수 있을까?
+
+🎮 예: NPC 자동 설정 정보
+
+```csharp
+public class NPCInfo
+{
+    public string Name { get; set; } = "이름 없음";
+    public DateTime Birthday { get; set; } = new DateTime(1980, 1, 1);
+
+    public int Age => new DateTime(DateTime.Now.Subtract(Birthday).Ticks).Year;
+}
+```
+
+👉 게임이 시작되자마자 기본값이 자동으로 들어가니까 편리하고,  
+필요할 때만 값을 바꿔주면 돼!
+
+---
+
+✅ 정리!
+
+- 자동 구현 프로퍼티는 코드를 짧고 간단하게 만들어줘.
+- `= 기본값` 설정으로 미리 값 넣기도 가능!
+- 계산 전용 프로퍼티도 `get`만으로 쉽게 만들 수 있어.
+- 캐릭터, NPC 정보, 자동 초기화 값 등 게임에서 정말 자주 사용돼!
+
+---
+
+🎉 프로퍼티 하나로 값 저장도 하고, 기본값도 넣고, 계산도 한다!  
+이제 너도 C# 프로퍼티 마스터! 😄

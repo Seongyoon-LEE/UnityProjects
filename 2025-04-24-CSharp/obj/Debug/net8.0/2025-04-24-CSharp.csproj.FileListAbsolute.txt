@@ -1,0 +1,14 @@
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\bin\Debug\net8.0\2025-04-24-CSharp.exe
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\bin\Debug\net8.0\2025-04-24-CSharp.deps.json
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\bin\Debug\net8.0\2025-04-24-CSharp.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\bin\Debug\net8.0\2025-04-24-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\bin\Debug\net8.0\2025-04-24-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\refint\2025-04-24-CSharp.dll
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.pdb
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\2025-04-24-CSharp.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\2025-04-24-CSharp\obj\Debug\net8.0\ref\2025-04-24-CSharp.dll

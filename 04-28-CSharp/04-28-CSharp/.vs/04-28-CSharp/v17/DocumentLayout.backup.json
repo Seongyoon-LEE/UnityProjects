@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\mainapp5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:mainapp5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\mainapp4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:mainapp4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\mainapp3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:mainapp3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\mainapp2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:mainapp2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\recursive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:recursive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|c:\\users\\wd\\documents\\csharpbase\\04-28-csharp\\04-28-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B9FD83E-28A8-4C82-8623-50A5B5ACC442}|04-28-CSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 194,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainApp5.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp5.cs",
+              "RelativeDocumentMoniker": "MainApp5.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp5.cs*",
+              "RelativeToolTip": "MainApp5.cs*",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAswAoBAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T07:14:22.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainApp4.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp4.cs",
+              "RelativeDocumentMoniker": "MainApp4.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp4.cs",
+              "RelativeToolTip": "MainApp4.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T06:35:41.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainApp3.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp3.cs",
+              "RelativeDocumentMoniker": "MainApp3.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp3.cs",
+              "RelativeToolTip": "MainApp3.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T05:57:41.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainApp2.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp2.cs",
+              "RelativeDocumentMoniker": "MainApp2.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp2.cs",
+              "RelativeToolTip": "MainApp2.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAMwAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T05:49:57.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Recursive.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\Recursive.cs",
+              "RelativeDocumentMoniker": "Recursive.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\Recursive.cs",
+              "RelativeToolTip": "Recursive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T05:16:36.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainApp.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp.cs",
+              "RelativeDocumentMoniker": "MainApp.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\MainApp.cs",
+              "RelativeToolTip": "MainApp.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:58:01.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\04-28-CSharp\\04-28-CSharp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:16:31.317Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

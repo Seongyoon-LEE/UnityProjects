@@ -1,0 +1,109 @@
+📘 추상 클래스(Abstract Class) + 프로퍼티(Property) 정리편
+
+이번에는 C#에서 **추상 클래스**와 **프로퍼티**를 어떻게 함께 사용하는지 배워보자!  
+이건 클래스 상속 구조를 제대로 이해하는 데 정말 중요해! 💪
+
+---
+
+✅ 1. 추상 클래스란?
+```csharp
+abstract class Product
+```
+✔ 추상 클래스는 "직접 인스턴스화할 수 없고",  
+✔ **자식 클래스에서 꼭 완성시켜야 하는 틀**만 제공해.
+
+---
+
+✅ 2. 추상 프로퍼티 정의
+
+```csharp
+abstract public DateTime ProductDate { get; set; }
+```
+
+✔ 추상 메서드처럼, **추상 프로퍼티**도 구현이 없어.
+✔ 자식 클래스에서 반드시 `override`로 구현해야 해!
+
+---
+
+✅ 3. 일반 프로퍼티와 static 필드
+
+```csharp
+private static int serial = 0;
+public string SerialID
+{
+    get { return String.Format("{0:d5}", serial++); }
+}
+```
+
+✔ `SerialID`는 시리얼 번호를 매번 00000, 00001, 00002 이런 식으로 부여해줘.
+✔ static으로 선언돼서 **클래스 전체에서 공유되는 번호**임!
+
+---
+
+✅ 4. 자식 클래스에서 추상 프로퍼티 구현
+
+```csharp
+class MyProduct : Product
+{
+    public override DateTime ProductDate { get; set; }
+}
+```
+
+✔ `override` 키워드로 부모 클래스의 추상 프로퍼티를 반드시 구현해야 해!
+✔ 여기선 자동 구현 프로퍼티를 사용해서 간단하게 처리했어.
+
+---
+
+✅ 5. 사용 예시
+
+```csharp
+MyProduct product_1 = new MyProduct()
+{
+    ProductDate = new DateTime(2020,1,10)
+};
+Console.WriteLine($"Product: {product_1.SerialID} Product Date:{product_1.ProductDate}");
+```
+
+📌 실행 예시:
+```
+Product: 00000 Product Date: 2020-01-10
+Product: 00001 Product Date: 2020-02-03
+```
+
+---
+
+✅ 6. 게임에서는 어떻게 활용될까?
+
+🎮 예: 아이템(Item) 클래스 구조에 활용
+
+```csharp
+abstract class GameItem
+{
+    public abstract string ItemName { get; set; }
+    public string ItemID => Guid.NewGuid().ToString(); // 유니크 ID
+}
+
+class Sword : GameItem
+{
+    public override string ItemName { get; set; } = "기본 검";
+}
+```
+
+✔ 추상 클래스: 다양한 아이템들의 공통 틀 제공  
+✔ 자식 클래스: 각각의 속성 구체화
+
+---
+
+✅ 정리!
+
+| 개념 | 설명 |
+|------|------|
+| 추상 클래스 | 직접 사용 불가능. 자식이 구현해야 함 |
+| 추상 프로퍼티 | 구현 없이 선언만 함. override로 구현 |
+| static 필드 | 클래스 전체에서 공유되는 값 (예: 시리얼 넘버) |
+| 자동 구현 | 자식 클래스에서 빠르게 구현 가능 |
+
+---
+
+🎉 추상 클래스 + 프로퍼티 조합은 **객체지향 설계의 핵심**이야!  
+특히 RPG나 시뮬레이션 게임에서 아이템, 캐릭터, 몬스터 설계할 때 아주 중요해! 😎
