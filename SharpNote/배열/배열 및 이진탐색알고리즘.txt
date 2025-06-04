@@ -1,0 +1,168 @@
+📘 C# 배열 + 정렬 + 검색 + 조건 검사 + 이진 탐색 총정리 (초등학생도 이해 가능 버전) 🧒🎮
+
+---
+
+✅ Part 1. 배열이란?
+
+배열은 여러 개의 값을 한꺼번에 저장하는 통! 🍱
+예: 점수 여러 개를 저장하고 싶을 때
+
+```csharp
+int[] scores = new int[5] { 80, 74, 81, 90, 34 };
+```
+
+이건 "scores"라는 이름의 상자에 5개의 숫자를 담은 거야!
+
+---
+
+✅ Part 2. 배열을 정렬하고 출력하기
+
+```csharp
+Array.Sort(scores); // 숫자를 오름차순으로 정렬해줘
+```
+
+📌 예를 들어 정렬 전: [80, 74, 81, 90, 34] → 정렬 후: [34, 74, 80, 81, 90]
+
+```csharp
+Array.ForEach(scores, new Action<int>(PrintScores));
+```
+
+`PrintScores`는 배열의 모든 숫자를 줄줄이 출력해주는 친구야!
+
+---
+
+✅ Part 3. 배열 차원 수 구하기
+
+```csharp
+Console.WriteLine(scores.Rank); // 1차원 배열 (줄로 된 것 하나)
+```
+
+📌 2차원 배열 (표 형태) 예시:
+```csharp
+int[,] multiArray = new int[2, 3] { {1,2,3}, {4,5,6} };
+```
+
+📌 3차원 배열 (큐브 형태):
+```csharp
+int[,,] threeDArray = new int[2,2,2] {
+    { {1,2}, {3,4} },
+    { {5,6}, {7,8} }
+};
+```
+
+---
+
+✅ Part 4. 배열 검색하기 (정렬된 상태에서만 빠르게 찾을 수 있어!)
+
+```csharp
+Array.BinarySearch(scores, 81); // 이진 탐색 알고리즘 (빨라!)
+Array.IndexOf(scores, 81); // 선형 탐색 (하나하나 찾음)
+```
+
+---
+
+✅ Part 5. 조건 검사하기 (모두 통과했는지?)
+
+```csharp
+Array.TrueForAll(scores, CheckPassed); // 60점 이상인지 전부 확인!
+```
+
+📌 `CheckPassed` 메서드는 60점 이상이면 true를 반환해!
+
+---
+
+✅ Part 6. 배열 요소 수정하기
+
+```csharp
+int index = Array.FindIndex(scores, s => s < 60);
+scores[index] = 61;
+```
+
+👉 60점 미만인 점수를 찾아서 61점으로 고쳤어!
+
+---
+
+✅ Part 7. 배열 크기 바꾸기, 지우기, 복사하기
+
+```csharp
+Array.Resize(ref scores, 10); // 배열 크기 10으로 확장
+Array.Clear(scores, 3, 7); // 3번째부터 7개를 0으로 초기화
+int[] sliced = new int[3];
+Array.Copy(scores, 0, sliced, 0, 3); // 앞 3개만 복사
+```
+
+---
+
+✅ Part 8. 이진 탐색 알고리즘 직접 구현해보기!
+
+```csharp
+public static int BSearch(int[] ar, int len, int target)
+{
+    int first = 0;
+    int last = len - 1;
+    int mid;
+
+    while (first <= last)
+    {
+        mid = first + (last - first) / 2;
+
+        if (target == ar[mid]) return mid;
+        else if (target < ar[mid]) last = mid - 1;
+        else first = mid + 1;
+    }
+
+    return -1;
+}
+```
+
+📌 정렬된 배열에서 원하는 값을 빠르게 찾는 방법이야!  
+중간부터 보면서 절반씩 좁혀가니까 엄청 빨라!
+
+---
+
+🎮 게임에서 쓰이는 예시
+
+1. **캐릭터 경험치 순위 정렬**
+```csharp
+int[] exp = { 1200, 950, 1800, 640 };
+Array.Sort(exp); // 경험치 낮은 순으로 정렬!
+```
+
+2. **HP가 0보다 작은 캐릭터만 찾기**
+```csharp
+int[] hps = { 50, 0, -10, 70 };
+int index = Array.FindIndex(hps, hp => hp <= 0);
+// index = 1 → 두 번째 캐릭터가 죽었어!
+```
+
+3. **아이템 리스트에서 특정 아이템 찾기**
+```csharp
+string[] items = { "포션", "검", "방패", "활" };
+int foundIndex = Array.IndexOf(items, "검"); // 1번 인덱스
+```
+
+4. **이진 탐색으로 유니크 ID 찾기**
+```csharp
+int[] sortedIDs = { 101, 202, 303, 404 };
+int found = BSearch(sortedIDs, sortedIDs.Length, 303); // 2번 인덱스
+```
+
+---
+
+✅ 정리 요약
+
+| 개념 | 설명 |
+|------|------|
+| 배열 | 여러 데이터를 순서대로 저장 |
+| Sort | 오름차순 정렬 |
+| ForEach | 각 요소 출력 |
+| Rank | 배열 차원 수 |
+| BinarySearch | 정렬된 배열에서 빠르게 찾기 |
+| TrueForAll | 모든 요소가 조건을 만족하는지 확인 |
+| Resize / Clear / Copy | 배열 조작 (크기변경, 초기화, 복사) |
+| 이진탐색 | 빠른 검색 알고리즘 |
+
+---
+
+📚 이걸로 배열과 검색, 정렬, 조건 검사까지 완전 정복!  
+게임에서도 캐릭터, 아이템, 전투 시스템 등에 다양하게 활용할 수 있어! 💪😄

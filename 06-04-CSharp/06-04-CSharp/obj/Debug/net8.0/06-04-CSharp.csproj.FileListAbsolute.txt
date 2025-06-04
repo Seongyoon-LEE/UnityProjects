@@ -1,0 +1,15 @@
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.AssemblyInfoInputs.cache
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.AssemblyInfo.cs
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.sourcelink.json
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\bin\Debug\net8.0\06-04-CSharp.exe
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\bin\Debug\net8.0\06-04-CSharp.deps.json
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\bin\Debug\net8.0\06-04-CSharp.runtimeconfig.json
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\bin\Debug\net8.0\06-04-CSharp.dll
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\bin\Debug\net8.0\06-04-CSharp.pdb
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.dll
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\refint\06-04-CSharp.dll
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.pdb
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\06-04-CSharp.genruntimeconfig.cache
+C:\Users\TAP2\Documents\CSharpBase\UnityProjects\06-04-CSharp\06-04-CSharp\obj\Debug\net8.0\ref\06-04-CSharp.dll
