@@ -1,0 +1,17 @@
+meshRenderer.material.mainTextureOffset = new Vector2(x, y); : 텍스쳐 오프셋 이동 
+transform.Translate(Vector3.left * speed * Time.deltaTime); : 이동 
+Mathf.Clamp(value,min,max) : 값을 제한하는 함수 ex) tr.position.x,-7f,7f
+Instantiate(asteroidPrefab,new Vector3(12f,randomY,asteroidPrefab.transform.position.z),Quaternion.identity);
+Quaternion.identity = 회전 x
+DontDestroyOnLoad(this.gameObject); // 다음 씬으로 가도 게임 매니저가 사라지지 않는다.
+Invoke("LobbySceneMove", 3.0f);스트링 문자를 읽어서 원하는 시간에 호출하는 함수 
+[RequireComponent(typeof(NavMeshAgent))] : 필요 어트리븃
+[SerializeField] : private라고 했지만 인스펙터에서 보이게 해줌
+[System.Serializable] // Serializable : 인스펙터에서 보이게 해주는 어트리뷰트
+Vector3.Distance(transform.position, target) <= 0.5f) : 플레이어와 타겟의 거리를 구해주는 함수 
+(agent.remainingDistance <= 0.5f) : 네비메쉬 에이전트의 남은 거리
+ Camera.main.ScreenPointToRay(Input.mousePosition) : ScreenPointToRay -> 
+Math.FloorToInt() :  float 값보다 작거나 같은 큰 정수를 반환 한다.
+Time.realtimeSinceStartup : 게임이 시작한 이후의 시간을 초단위로 반환 readonly 속성
+AddForce(Vector2.right * speed,ForceMode2D.Impulse)
+Invoke("OnAttackEnd", 1.5f) = OnAttack 함수가 1.5초 있다가 호출되게 한다.

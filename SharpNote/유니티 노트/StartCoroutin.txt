@@ -1,0 +1,64 @@
+🌀 **Unity Coroutine (StartCoroutine) 완벽 이해 정리**
+
+## 1️⃣ Coroutine이란?
+- Unity에서 `Coroutine`은 시간 지연, 애니메이션 처리, 반복 제어 등 '비동기적 흐름 제어'에 사용되는 기능입니다.
+- `IEnumerator`를 반환하는 메서드를 정의하고, `StartCoroutine()`으로 실행합니다.
+
+## 2️⃣ 사용 예시: Light 순차 점등
+```csharp
+IEnumerator LightOnOff()
+{
+    whiteLight.enabled = true;
+    yellowLight.enabled = false;
+    blueLight.enabled = false;
+    yield return new WaitForSeconds(3f);
+
+    whiteLight.enabled = false;
+    yellowLight.enabled = true;
+    blueLight.enabled = false;
+    yield return new WaitForSeconds(3f);
+
+    whiteLight.enabled = false;
+    yellowLight.enabled = false;
+    blueLight.enabled = true;
+    yield return new WaitForSeconds(3f);
+
+    TurnOnLight(); // 재귀적으로 반복
+}
+```
+- `WaitForSeconds`는 해당 시간만큼 일시 정지했다가 다음 코드 실행.
+- 반복 호출 방식으로 루프처럼 작동 가능.
+
+## 3️⃣ Coroutine의 특징 정리
+- ✅ `Update()`와 달리 프레임마다 실행하지 않아 성능 부담 적음.
+- ✅ 애니메이션, 연출 타이밍 조절 등에 매우 유용.
+- ❗ 주의: `Coroutine`은 `StopCoroutine()` 또는 `StopAllCoroutines()`을 호출하지 않으면 계속 실행됨.
+
+## 4️⃣ 유용한 Coroutine 패턴 예시
+### 🔁 반복 애니메이션
+```csharp
+IEnumerator BlinkLight(Light targetLight, float interval)
+{
+    while (true)
+    {
+        targetLight.enabled = !targetLight.enabled;
+        yield return new WaitForSeconds(interval);
+    }
+}
+// 사용: StartCoroutine(BlinkLight(whiteLight, 0.5f));
+```
+
+### 🛑 종료 조건 포함 반복
+```csharp
+IEnumerator WaitUntilExample()
+{
+    yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+    Debug.Log("스페이스 눌림!");
+}
+```
+
+## 5️⃣ Coroutine 팁
+- `Coroutine` 안에서 또 다른 `Coroutine` 실행 가능 (`yield return StartCoroutine(다른코루틴())`)
+- Unity 이벤트나 UI 트리거에 연출 타이밍을 넣을 때 매우 강력함.
+
+✨ 정리: `Coroutine`은 Unity 게임 개발의 타이밍, 애니메이션, 연출을 다루는 핵심 무기입니다. 잘만 쓰면 코드도 깔끔, 퍼포먼스도 굿!

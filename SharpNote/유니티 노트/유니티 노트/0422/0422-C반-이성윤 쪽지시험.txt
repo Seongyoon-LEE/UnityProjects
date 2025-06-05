@@ -1,0 +1,35 @@
+#region 문제1
+Console.WriteLine("사각형의 너비를 입력하세요.");
+string width = Console.ReadLine();
+
+Console.WriteLine("사각형의 높이를 입력하세요");
+string height = Console.ReadLine();
+
+Console.WriteLine($"사각형의 넓이값 : {int.Parse(width)* int.Parse(height)}");
+#endregion
+
+#region 문제2
+//int a = 7.3; //-> //int는 정수형이고 7.3은 실수형이다.
+//float b = 3.14; //-> //3.14f가 안붙음.
+//double c = a * b; // -> a,b가 선언되지 않았는데 a*b를 사용했다.
+//char d = "abc"; //-> char는 한글자만 받는데 "abc"는 문자열이다.
+//string e = '한'; //->  string은 문자열이기 때문에 ""으로 받는데 '한'은 ''이다.
+#endregion
+
+  #region 문제3
+  //값형식(기본데이터) : 메모리 안에 값이 들어가 있는것.ex)stack,int,struct
+  //참조형식(복합데이터) : 어떤 메모리에 저장 되어있는지 아는것.ex)heap,class,string,array
+  #endregion
+
+ #region 문제4
+ //박싱(Boxing) : 값형식을 힙 메모리에 할당된 객체로 변환하여 참조 형식처럼 다룰수 있다.
+값 형식을 참조 형식으로 바꾸는것 ex) (object)int로 감싸서 힙에 저장
+ //언박싱(Unboxing) :박싱된 객체를 다시 값 형식으로 변환하는 과정.박싱된 값은 힙 메모리에서 스택 메모리로 복사 되며 이 과정에서 clr이 자동으로 사용하지 않는 메모리를 삭제합니다.
+ 참조 형식을 다시 값 형식으로 꺼내는 것 ex) object에서 원래 값 형식으로 꺼냄
+ #endregion
+
+  #region 문제5
+ //var a = 2020; -> int형
+ //var b = "double"; -> string형
+
+  #endregion

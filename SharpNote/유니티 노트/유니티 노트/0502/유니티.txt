@@ -1,0 +1,11 @@
+탑뷰 : 완전 90도
+쿼터뷰 : 비스듬하게 
+캐릭터에 리지드바디를 넣으면 물리력 때문에 빠른 이동시 넘어지는데
+-Constrains : Freeze Rotation 축을 다 잠구면 안넘어지게함
+Require : 필요
+
+Ray : 광선 
+Ray ray;
+RaycastHit hit; // 광선에 어떤 오브젝트가 맞았는지 검사 맞은 위치와 방향 거리등을 알수 있다.
+Nav Mesh Agent -> Auto Braking : 목적지에 도달할때쯤에 천천히
+Nav Mesh Agent -> Stopping Distance : 목적지 앞에서 멈춤

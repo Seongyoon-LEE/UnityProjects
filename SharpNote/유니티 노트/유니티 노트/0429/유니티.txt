@@ -1,0 +1,61 @@
+width = 너비, 폭
+Length = 길이
+Height = 높이
+Detail Resolution = 풀, 나무 같은 오브젝트 해상도
+Band Factor = 바람에 흩날리는 효과
+slope = 경사지
+기즈모 = 좌표
+pivot = 기준점
+local = 오브젝트 기준
+global = 월드 좌표, 절대 좌표
+Collider = 충돌 감지
+Mapping = 텍스쳐 작업 
+Shader = 게임 그래픽 변화
+Legacy = 과거의 것
+Diffuse = 단일 이미지
+Planet = 행성
+Perspective = 3D, 원근감
+private = (접근제어지시자)접근 불가능 
+Rigidbody = 중력, 충돌 시뮬레이션 
+float(자료형) = 4byte(부동소숫점 7자리까지 정밀하게 표현 가능)
+double(자료형) = 8byte(부동소숫점 15자리까지 정밀하게 표현 가능)
+Euler = 회전한다
+is Trigger = 서로 통과하면서 충돌 감지
+Combine = 병합
+Friction = 마찰 
+Priority = 순서
+LTS = 많은게 변경되어도 상용화 가능
+컴파일러 = C#,C언어,java로 적은걸 해석해서 유니티로 전달
+. = 무슨 함수가 있냐
+Time.deltaTime = 부드러운 프레임을 만들어줌
+duration = 지속 시간 
+Waypoint = 목적지, 도착지
+internal = 내부의
+static = 미리 메모리 할당 되는것
+Main 함수 = 한 프로젝트의 하나만 존재, 프로그램의 시작점
+int = 정수형식 자료형 4byte
+parse = 분석하다.
+int.Parse = 형변환하다
+region = 지역 
+Definition = 정의
+Ailgn = 정렬
+Previous = 이전에
+combat = 전투 
+constant = 상수
+quad = (BackGround로 활용)메모리 가장 적게 차지 -> 한쪽만 렌더링 되어서 
+BackGround = Mobile/Paticles/Alpha Blended
+
+blend list camera 
+-시간 간격으로 장면 전환
+
+State-Driven Camera
+-애니메이션 특정 상태에 따라서 카메라를 전환 시켜주는 기능 
+
+Clear Shot Camera
+-장애물이 카메라를 가려질 때 다른 가상카메라로 전환 되는 기능 
+
+Dolly Camera with Track
+-더욱 영화적이고 몰입감 있는 카메라 연출 구현 가능
+
+Dolly Track with Cart
+-캐릭터는 가만히 있고 카메라가 카트에 따라 움직임 

@@ -1,0 +1,52 @@
+동적할당 -> 필요할때 메모리 할당
+정적할당 static-> 미리 메모리 할당 
+args -> 매개변수 
+매개변수에 넣는 값 = 전달인자
+cmd -> cd 경로명\
+namespace hi hello hallow->전달인자
+ipconfig = ip 확인
+overflow = 값이 넘치는 현상 
+10진수 리터럴(literal) 상수 : 메모리 어딘가에 있는 것 
+const = 상수 -> 대문자로 변수명 지정 
+guess = 추측하다
+var = 선언과 동시에 초기화, 지역변수에서만 사용
+
+
+1.데이터 형식이 무엇인지 이해
+-기본data(int,float),복합data(class,구조체(struct),배열(Array))
+
+2.값 형식과 참조 형식의 차이
+-구조체 = 값형식(기본데이터)->그메모리안에 값이 들어있는것, ex) Stack
+-클래스 = 참조형식(복합데이터)->어떤 메모리에 저장되어있는지 아는것 ex) heap
+-Stack(값형식) = main 함수에서 빠져나올때 메모리 공간에서 위에서부터 사라지는것
+-heap(참조형식,동적할당) = main 함수에서 빠져나와도 메모리 공간에 저장 -> heap은 프로그래머가 할당, CLR(가비지컬렉터)에서 삭제 
+string은 참조형식
+
+3.기본 데이터 형식의 사용방법(언더플로우, 오버플로우)
+-int b = int.Parse(a)
+-string b = a.ToString();
+-int f = Convert.ToInt32(e); 
+-float h = Convert.ToSingle(g);
+-double hh = Convert.ToDouble(gg);
+
+4.상수가 무엇인지 사용방법을 익힘
+-const -> 상수 -> 선언과 동시에 초기화(관례적으로 대문자로 변수명 지정)
+
+5.Nullable 형식의 이해
+
+6.C# 데이터 형식과 공용 형식 시스템과의 관계 이해 
+
+7.십진수 16진수(2진수가 너무 길때)
+ 7	7
+ 8 	8
+ 9 	9
+ 10 	A
+ 11	B
+ 12	C
+ 13	D
+ 14	E
+ 15	F
+ 16	10
+ 17 	11
+8.object만 쓰지 않는 이유
+-형변환이 일어나기 떄문에 다른 데이터 형식을 쓴다.

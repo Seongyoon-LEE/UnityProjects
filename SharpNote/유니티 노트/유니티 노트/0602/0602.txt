@@ -1,0 +1,7 @@
+Render Mode World Space: 특정 오브젝트에 UI를 다는 모드
+1.플레이어와 몹들과 Damage를 주고 받음
+UI로 표현 객제지향 프로그래밍
+2.Reload 애니메이션 구현
+주의 할점: 리로드 애니메이션중에는 총알 발사 금지
+3.Aim 조준점 CrossHair 만들기
+조준점이 흰색 

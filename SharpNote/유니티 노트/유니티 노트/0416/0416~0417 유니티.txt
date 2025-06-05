@@ -1,0 +1,55 @@
+width = 너비, 폭
+Length = 길이
+Height = 높이
+Detail Resolution = 풀, 나무 같은 오브젝트 해상도
+Band Factor = 바람에 흩날리는 효과
+slope = 경사지
+기즈모 = 좌표
+pivot = 기준점
+local = 오브젝트 기준
+global = 월드 좌표, 절대 좌표
+Collider = 충돌 감지
+Mapping = 텍스쳐 작업 
+Shader = 게임 그래픽 변화
+Legacy = 과거의 것
+Diffuse = 단일 이미지
+Planet = 행성
+Using = 사용하고싶다
+Class = 변수 함수가 묶인거
+Method = 함수 
+; = 마침표, 더이상 내릴 명령이 없다
+public = (접근제어지시자)접근 가능
+private = (접근제어지시자)접근 불가능 
+Perspective = 3D, 원근감
+float(자료형) = 4byte(부동소숫점 7자리까지 정밀하게 표현 가능)
+double(자료형) = 8byte(부동소숫점 15자리까지 정밀하게 표현 가능)
+Euler = 회전한다
+Blend List Camera = 장면 전환 되는 카메라
+Virtual Camera = 고정 되어있는 카메라
+FreeLook Camera = Top Rig, Middle Rig, Bottom Rig
+
+LTS = 많은게 변경되어도 상용화 가능
+컴파일러 = C#,C언어,java로 적은걸 해석해서 유니티로 전달
+. = 무슨 함수가 있냐
+Time.deltaTime = 부드러운 프레임을 만들어줌
+
+
+오브젝트 클릭후 F: 오브젝트 확대
+마우스 휠꾹: 손바닥
+고개를 위아래로: x축
+고개를 왼쪽 오른쪽:z축 
+고개를 도리도리:y축
+알트 좌클릭: 카메라만 돌아감
+
+1.오브젝트 생성시 트랜스폼(포지션,로테이션,스케일)은 무조건 붙음 
+태그는 대문자나 소문자
+
+2.Material의 유니티 역할
+-2d이미지를 3d로 사용할수 있도록 렌더링 하는거
+
+3.C#과 스크립트의 차이점
+-편의성을 위한게 스크립트, 전통 C#은 아님 
+
+4.변수명 앞에 숫자, 공백, 특수문자 x
+
+

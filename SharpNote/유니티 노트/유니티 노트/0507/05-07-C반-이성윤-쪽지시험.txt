@@ -1,0 +1,71 @@
+1. break  와 continue 각각 설명하세요
+break
+현재 반복문(또는 switch문)을 즉시 탈출
+→ 더 이상 반복하지 않고 빠져나간다!
+continue
+이번 반복만 건너뛰고, 다음 반복으로 넘어감
+→ 반복은 계속되지만, 아래 코드는 건너뛴다!
+
+2. 유니티에 어떤 객체가  마우스가 클릭 하는 곳으로 이동 하려면
+   어떻게 해야 하는 지 설명 하세요
+if (Input.GetMouseButtonDown(1)) // 우클릭
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // 마우스 위치를 월드 좌표로 변환
+                                                                //카메라에서 마우스 위치로 광선을 쏜다.
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100f)) //광선,맞은위치,거리는100,레이어마스크(8번 레이어만 체크)
+            {
+                agent.SetDestination(hit.point); // 마우스 클릭한 위치로 이동
+            }
+        }
+1.마우스 클릭하면 카메라에서 광선(Ray) 을 쏜다
+
+2.Raycast()로 클릭 위치의 지면 정보를 얻는다
+
+3.agent.SetDestination()으로 목적지를 설정한다
+
+3. 기본 데이터 형식과 복합데이터 형식 
+   값형식  스텍형식  heap형식 참조형식에 대해 설명 하세요
+기본 데이터 형식-int, float, char, bool 등
+-C#에서 제공하는 간단한 단일 값 자료형	
+복합 데이터 형식-class, struct, array, string 등
+-여러 값을 묶어서 표현하는 자료형	
+값 형식 (Value Type)
+-변수에 실제 값 자체를 저장함
+-복사해도 값만 복사되고 서로 독립적임
+참조 형식 (Reference Type)
+-변수에 값이 저장된 주소(참조) 를 저장함
+-복사해도 같은 객체를 가리키므로 서로 영향을 줌
+Stack
+-빠르고 자동 해제되는 메모리 공간
+Heap
+-객체들이 동적으로 저장되는 공간, 가비지컬렉터가 관리
+
+4. 가변길이 메서드를 만들어서
+    어떤 인자든지 다받아서 합계를 구할 수 있게
+    메서드를 만들어 보세요
+public static int Sum(params int[] nums)
+{
+    int total = 0;
+    foreach (int n in nums)
+        total += n;
+    return total;
+}
+
+// 사용 예
+int total = Sum(1, 2, 3, 4, 5); // 출력: 15
+Console.WriteLine(total);
+
+5.메소드 오버로딩은 위의 가변길이 개수 메서드를 쓰면 필요 있는 지 없는 지 설명하고
+메소드오버로딩과 가변길이 인수를 받는 메서드를 뭐가 다른지 설명 하세요
+메소드 오버로딩 
+-매개변수 개수나 타입이 다를때 구분
+-같은 이름의 매서드를 여러개 정의
+-장점)타입마다 정밀하게 처리 가능
+-단점)코드 중복될 수 있음
+가변길이 인자
+-매개변수 개수 자체가 유동적일때 사용
+-한개의 메서드로 여러 인자 처리
+-장점)코드가 간단해지고 확장성 좋음
+-단점)배열 처리만 가능 ->타입 제한 존재

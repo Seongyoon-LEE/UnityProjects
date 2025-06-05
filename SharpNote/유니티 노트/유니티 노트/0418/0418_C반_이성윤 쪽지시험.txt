@@ -1,0 +1,65 @@
+문제1
+//string? name = null;
+
+//name = Console.ReadLine();
+//string? age = Console.ReadLine();
+//string? adress = Console.ReadLine();
+//Console.WriteLine($"제 이름은 {name} 입니다.\n제 나이는 {age}이고요.\n제가 사는곳의 번지수는 {adress}입니다.");
+
+문제2
+//Console.WriteLine("4*5=20 \n7*9=63");
+
+문제3
+//Console.WriteLine("정수 한개 입력 바람 : ");
+//Console.WriteLine("첫번째 입력 : ");
+//int n1 = int.Parse(Console.ReadLine()!);
+//Console.WriteLine();
+//Console.WriteLine("두번째 입력 : ");
+//int n2 = int.Parse(Console.ReadLine()!);
+//int ma = n1 - n2;
+
+//Console.WriteLine("정수 한개 입력 바람 : ");
+//Console.WriteLine("첫번째 입력 : ");
+//int n3 = int.Parse(Console.ReadLine()!);
+//Console.WriteLine();
+//Console.WriteLine("두번째 입력 : ");
+//int n4 = int.Parse(Console.ReadLine()!);
+//int mul = n1 * n2;
+//Console.WriteLine($"뺄셈 : {ma} 곱셈 : {mul}");
+
+문제4
+  //Console.WriteLine("num1 입력:");
+  //int n1 = int.Parse(Console.ReadLine()!);
+  //Console.WriteLine("num2 입력:");
+  //int n2 = int.Parse(Console.ReadLine()!);
+  //Console.WriteLine("num3 입력:");
+  //int n3 = int.Parse(Console.ReadLine()!);
+  //int mul = n1 * n2 + n3;
+  //Console.WriteLine($"{n1}*{n2}+{n3}={mul}");
+  
+
+  문제5
+  //Console.WriteLine("하나의 정수를 입력 바람 : ");
+  //int n1 = int.Parse(Console.ReadLine());
+  //int mul = n1 * n1;
+  //Console.WriteLine($"{mul}");
+
+문제6
+  //Console.WriteLine("하나의 정수를 입력 바람 : ");
+  //int n1 = int.Parse(Console.ReadLine());
+  //Console.WriteLine("하나의 정수를 입력 바람 : ");
+  //int n2 = int.Parse(Console.ReadLine());
+  //int sum = n1 / n2;
+  //int sum1 = n1 % n2;
+  //Console.WriteLine($"{sum},{sum1}");
+
+문제7
+  //Console.WriteLine("첫번째 정수를 입력 바람 : ");
+  //int n1 = int.Parse(Console.ReadLine());
+  //Console.WriteLine("두번째 정수를 입력 바람 : ");
+  //int n2 = int.Parse(Console.ReadLine());
+  //Console.WriteLine("세번째 정수를 입력 바람 : ");
+  //int n3 = int.Parse(Console.ReadLine());
+  //int sum = (n1 - n2) * (n2 + n3) * (n3 % n1);
+  //Console.WriteLine($"{sum}");
+

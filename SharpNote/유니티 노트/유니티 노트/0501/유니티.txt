@@ -1,0 +1,14 @@
+캔버스 -> 렌더러 모드 -> 월드스페이스 : 몬스터 위에 체력바 
+캔버스 -> 렌더러 모드 -> 스크린 스페이스 - 오버레이 : 모니터에 종잇장 올려짐
+
+NavMeshAgent : AI 경로 추적 
+-stopping distance : 목적지 앞에서 ?만큼 멈춘다
+Rig ->generic = 사족보행, generic+humanoid : 메카님
+mass : 무게, 덩어리
+Drag : 저항
+Obstacle : 장애물 
+Avoidance : 
+Serializable : 인스펙터에서 보이게 해주는 어트리뷰트
+valid : 유효한
+
+윤곽을 표현하기 위해서 노멀맵을 추가함

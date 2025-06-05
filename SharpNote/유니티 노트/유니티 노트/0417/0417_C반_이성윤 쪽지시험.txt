@@ -1,0 +1,17 @@
+1.SkyBox로 우주 공간을 만들어서 하늘 배경으로 하려고 한다. 어떻게 해야 하는지 순서대로 적으시오.
+-Materials 폴더 생성 -> Space_M 머티리얼 생성 -> Shader를 Skybox/6sided로 설정 -> 6면에 맞게 이미지 셋팅 
+->Window -> Rendering -> Lighting -> Environment에서 Skybox Material을 만들어놓은 Space_M으로 설정
+
+2. 머터리얼이란? 게임에서 어떤 역할을 하는지 적으시오
+-2D이미지를 3D로 사용할수 있도록 렌더링 하는 역할
+
+3.Class란 무슨 뜻인지 적으시오.
+-변수와 함수가 묶여있는 클래스 객체
+
+4.public private를 접근제어 지시자라고 부른다. 각각 어떤 역할인지 적으시오
+-public은 접근이 가능해서 참조가 되고, private은 접근이 불가능하다.
+
+5.PackageManager의 각각의 메뉴를 순서대로 나열하고 각각 어떤 점이 다른지 적으시오.
+-1.My Asset : AssetStore에서 다운받은 에셋들이 있는곳
+-2.In Project : 프로젝트 내부의 있는것
+-3.Unity Registry : 유니티에서 지원하는 기능들을 등록하는곳
