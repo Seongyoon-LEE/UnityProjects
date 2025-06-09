@@ -1,0 +1,146 @@
+
+==============================
+🎯 기술면접 대비 필수 개념 & 실전 예제 정리
+==============================
+
+이 문서는 2차 기술 면접이나 코딩 테스트에서 자주 나오는 주제들을 정리하고, 그에 대한 코드 예제를 C#으로 설명합니다. 강사님이 언급한 "인덱스" 만드는 문제 포함해서 기본기를 다질 수 있게 만들었어요!
+
+------------------------------
+✅ 1. 배열 인덱스 직접 구현 (강사님 예시)
+------------------------------
+✔️ 개념:
+- 배열을 클래스 내부에 두고, 인덱서를 통해 값을 읽고/쓰기
+
+✔️ 예시 코드:
+```csharp
+class MyIndex
+{
+    private int[] data = new int[5];
+    public int this[int index]
+    {
+        get { return data[index]; }
+        set { data[index] = value; }
+    }
+}
+
+MyIndex arr = new MyIndex();
+arr[0] = 10;
+Console.WriteLine(arr[0]); // 10 출력
+```
+
+🧠 이런 문제가 나오는 이유: **배열, 인덱서, 클래스 구조 이해 확인**
+
+------------------------------
+✅ 2. 문자열 뒤집기 (Reverse String)
+------------------------------
+✔️ 문제: 문자열 "hello" → "olleh"
+
+✔️ 예시 코드:
+```csharp
+string str = "hello";
+char[] arr = str.ToCharArray();
+Array.Reverse(arr);
+string reversed = new string(arr);
+Console.WriteLine(reversed); // olleh
+```
+
+🧠 문자열 처리 능력, 배열 응용력 체크
+
+------------------------------
+✅ 3. 중복 제거된 리스트 만들기
+------------------------------
+✔️ 문제: [1, 2, 2, 3, 3, 4] → [1, 2, 3, 4]
+
+✔️ 예시 코드:
+```csharp
+List<int> list = new List<int>(){1,2,2,3,3,4};
+List<int> result = list.Distinct().ToList();
+```
+
+🧠 LINQ 응용력과 컬렉션 처리 능력 평가
+
+------------------------------
+✅ 4. 팩토리얼 재귀 구현
+------------------------------
+✔️ 문제: 5! = 5×4×3×2×1 = 120
+
+✔️ 예시 코드:
+```csharp
+int Factorial(int n)
+{
+    if (n <= 1) return 1;
+    return n * Factorial(n - 1);
+}
+```
+
+🧠 재귀 함수 개념, 기본 알고리즘 구현력 테스트
+
+------------------------------
+✅ 5. 배열에서 최대값/최소값 찾기
+------------------------------
+✔️ 예시 코드:
+```csharp
+int[] arr = { 3, 7, 2, 9, 1 };
+int max = arr.Max();
+int min = arr.Min();
+```
+
+🧠 LINQ 또는 루프 응용 능력 체크
+
+------------------------------
+✅ 6. Queue/Stack 활용 문제
+------------------------------
+✔️ 예시: 괄호 짝 맞추기 (Stack 응용)
+```csharp
+bool IsValid(string s)
+{
+    Stack<char> stack = new Stack<char>();
+    foreach (char c in s)
+    {
+        if (c == '(') stack.Push(c);
+        else if (c == ')')
+        {
+            if (stack.Count == 0) return false;
+            stack.Pop();
+        }
+    }
+    return stack.Count == 0;
+}
+```
+
+🧠 스택 구조에 대한 이해도 평가
+
+------------------------------
+✅ 7. Dictionary 응용 (빈도수 세기)
+------------------------------
+✔️ 문제: "apple" → a:1, p:2, l:1, e:1
+
+✔️ 예시 코드:
+```csharp
+Dictionary<char, int> dict = new Dictionary<char, int>();
+string str = "apple";
+foreach (char c in str)
+{
+    if (!dict.ContainsKey(c)) dict[c] = 1;
+    else dict[c]++;
+}
+```
+
+🧠 해시 테이블 구조와 반복문 활용 능력
+
+------------------------------
+📌 정리 - 기술면접 필수 연습 주제
+------------------------------
+1. 인덱서 구현 (클래스 안에 배열 만들고 접근)
+2. 문자열 처리 (뒤집기, 비교, 파싱)
+3. 배열 & 리스트 다루기 (중복 제거, 정렬)
+4. 재귀 함수 구현 (팩토리얼, 피보나치)
+5. Stack, Queue 문제 응용
+6. Dictionary 활용 (빈도수 세기 등)
+7. 간단한 알고리즘 문제 해결력 (최댓값, 최솟값 등)
+
+💬 연습 팁:
+- 각 주제별로 직접 코딩하면서 손에 익히는 것이 가장 중요합니다.
+- Unity에서도 사용 가능하므로 프로젝트 내에서 활용도 가능해요!
+
+화이팅!! 면접관 앞에서도 침착하게 💪😄

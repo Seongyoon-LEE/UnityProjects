@@ -1,3 +1,6 @@
 ascend: 오르다
 descend:내리다
 Enumerator: 열거
+Temp: 임시
+Collections : 배열과 비슷한 ArrayList
+arrayList : 자료형이 object임으로 박싱 언박싱이 일어나서 유니티에서 잘 안씀

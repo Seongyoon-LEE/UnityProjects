@@ -1,0 +1,148 @@
+
+==============================
+📘 C# 컬렉션 종류와 Unity 게임에서의 활용
+==============================
+
+이 파일은 C#의 주요 컬렉션들 (ArrayList, Queue, Stack, Hashtable)에 대한 개념과 Unity 게임 프로그래밍에서의 활용 예시를 초등학생도 이해할 수 있도록 쉽게 설명한 정리본입니다 😊
+
+------------------------------
+🔹 1. ArrayList (배열 리스트)
+------------------------------
+✔️ 개념:
+- 크기가 고정된 배열과 달리, **원하는 만큼 데이터를 계속 추가할 수 있는 배열**입니다.
+- `object` 타입으로 되어 있어, 어떤 자료형이든 넣을 수 있어요 (숫자, 글자, 불값 등).
+
+✔️ 사용 예시 코드:
+```csharp
+ArrayList arrayList = new ArrayList();
+arrayList.Add(1);
+arrayList.Add("Hello");
+arrayList.Add(true);
+foreach (var item in arrayList)
+{
+    Console.WriteLine(item);
+}
+```
+
+✔️ Unity에서의 활용 예:
+- 다양한 자료형을 섞어서 임시로 저장해야 할 때 (단, 최신 Unity에서는 `List<T>`를 더 많이 써요).
+- 예: 디버깅용 로그 저장 리스트.
+
+------------------------------
+🔹 2. Queue (큐) - FIFO 구조
+------------------------------
+✔️ 개념:
+- **먼저 들어온 데이터가 먼저 나가는 구조**입니다 (First In First Out).
+- 줄 서는 순서라고 생각하면 쉬워요!
+
+✔️ 사용 예시 코드:
+```csharp
+Queue<int> queue = new Queue<int>();
+queue.Enqueue(1);
+queue.Enqueue(2);
+queue.Enqueue(3);
+while (queue.Count > 0)
+{
+    Console.WriteLine(queue.Dequeue());
+}
+```
+
+✔️ Unity에서의 활용 예:
+- **적 AI 경로 이동**, **탄환 풀링 시스템**, **대사 출력 순서** 등에 활용!
+- 예: 보스가 점프 → 공격 → 후퇴 순서로 행동하려면 그 순서를 큐에 넣고 하나씩 꺼내 처리해요.
+
+------------------------------
+🔹 3. Stack (스택) - LIFO 구조
+------------------------------
+✔️ 개념:
+- **나중에 들어온 데이터가 먼저 나가는 구조**입니다 (Last In First Out).
+- 종이 쌓는 것처럼 맨 위에 있는 게 먼저 나간다고 생각하면 돼요!
+
+✔️ 사용 예시 코드:
+```csharp
+Stack<int> stack = new Stack<int>();
+stack.Push(1);
+stack.Push(2);
+stack.Push(3);
+while (stack.Count > 0)
+{
+    Console.WriteLine(stack.Pop());
+}
+```
+
+✔️ Unity에서의 활용 예:
+- **Undo/Redo 기능**, **상태 복귀**, **전투 상태 스택** 등에 활용.
+- 예: 무기 변경 → 전투 돌입 → 피격 → 다시 무기 상태로 복귀하려면 스택이 딱 좋아요.
+
+------------------------------
+🔹 4. Hashtable (해시 테이블)
+------------------------------
+✔️ 개념:
+- **키(Key)와 값(Value)를 짝지어 저장하는 구조**입니다.
+- 키를 이용해 값을 빠르게 찾아낼 수 있어요.
+
+✔️ 사용 예시 코드:
+```csharp
+Hashtable ht = new Hashtable();
+ht["book"] = "책";
+ht["apple"] = "사과";
+Console.WriteLine(ht["book"]); // 결과: 책
+```
+
+✔️ Unity에서의 활용 예:
+- **아이템 사전**, **다국어 번역 사전**, **속성 검색** 등에 사용.
+- 예: `"sword"`라는 키에 `"칼"`이라는 이름과 데미지 정보를 연결해두고 필요할 때 찾음.
+
+------------------------------
+🔸 현업에서 자주 쓰는 것?
+------------------------------
+✅ Unity에서는 다음을 더 자주 씁니다:
+- `Queue` ➜ 오브젝트 풀링, 순서 이벤트
+- `Stack` ➜ 상태 복귀, Undo 시스템
+- `Dictionary<K,V>` (Hashtable보다 더 자주 쓰는 제네릭 버전)
+
+🔹 `ArrayList`, `Hashtable`은 구버전이며, **List<T>, Dictionary<T1, T2>** 가 더 자주 쓰입니다.
+
+------------------------------
+🎮 Unity 게임 예제 모음
+------------------------------
+
+✔️ 1. 적 경로 이동 (Queue)
+```csharp
+Queue<Vector3> pathQueue = new Queue<Vector3>();
+pathQueue.Enqueue(new Vector3(0, 0, 0));
+pathQueue.Enqueue(new Vector3(5, 0, 0));
+pathQueue.Enqueue(new Vector3(10, 0, 0));
+
+StartCoroutine(MoveByQueue());
+
+IEnumerator MoveByQueue()
+{
+    while (pathQueue.Count > 0)
+    {
+        Vector3 nextPos = pathQueue.Dequeue();
+        yield return MoveTo(nextPos);
+    }
+}
+```
+
+✔️ 2. 무기 변경 후 복귀 (Stack)
+```csharp
+Stack<string> stateStack = new Stack<string>();
+stateStack.Push("Idle");
+stateStack.Push("Battle");
+stateStack.Push("Damaged");
+
+string currentState = stateStack.Pop(); // "Damaged" → 복귀 시 다시 Battle
+```
+
+✔️ 3. 다국어 번역용 Dictionary
+```csharp
+Dictionary<string, string> langTable = new Dictionary<string, string>();
+langTable["hello"] = "안녕하세요";
+langTable["bye"] = "안녕히 가세요";
+
+string koreanHello = langTable["hello"]; // "안녕하세요"
+```
+
+끝까지 읽어줘서 고마워요! 게임에 필요한 구조를 잘 알고 있으면 정말 강력한 도구가 되니까, 잘 익혀두자구요 😊

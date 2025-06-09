@@ -1,0 +1,73 @@
+
+==============================
+✨ C# 제네릭 메서드 예제 - 배열 복사 기똥차게 정리 ✨
+==============================
+
+이 문서는 C#에서 **제네릭 메서드(Generic Method)** 를 활용하여 다양한 자료형의 배열을 복사하는 방법을 예제와 함께 정리한 자료입니다.  
+이해만 하면 Unity에서도 유용하게 쓸 수 있어요 😊
+
+------------------------------
+✅ 제네릭 메서드란?
+------------------------------
+- 함수에 자료형을 고정하지 않고 **나중에 사용할 때 자료형을 지정**할 수 있게 만드는 기능이에요.
+- `static void CoppyArray<T>(T[] source, T[] target)` 처럼 `<T>`를 사용해서 만듭니다.
+- `T`는 Type의 약자. 실제 사용할 때는 `int`, `string`, `float` 등으로 바뀝니다.
+
+------------------------------
+🔸 코드 예시: 배열 복사
+------------------------------
+```csharp
+static void CoppyArray<T>(T[] source, T[] target)
+{
+    for (int i = 0; i < source.Length; i++)
+    {
+        target[i] = source[i];
+    }
+}
+```
+
+📌 사용 예:
+```csharp
+int[] source = { 1, 2, 3 };
+int[] target = new int[3];
+CoppyArray<int>(source, target);
+
+string[] sourceStr = { "a", "b", "c" };
+string[] targetStr = new string[3];
+CoppyArray<string>(sourceStr, targetStr);
+```
+
+------------------------------
+🎮 Unity에서의 활용 예시
+------------------------------
+
+✔️ 예: 다양한 타입의 오브젝트 배열 복사할 때
+```csharp
+GameObject[] sourceObjects = FindObjectsOfType<GameObject>();
+GameObject[] copyObjects = new GameObject[sourceObjects.Length];
+CoppyArray<GameObject>(sourceObjects, copyObjects);
+```
+
+✔️ 예: string 타입 퀘스트 이름 복사
+```csharp
+string[] questNames = { "시작 퀘스트", "보스 퀘스트" };
+string[] questCopy = new string[questNames.Length];
+CoppyArray<string>(questNames, questCopy);
+```
+
+------------------------------
+📌 정리 요약
+------------------------------
+| 항목 | 설명 |
+|------|------|
+| 제네릭 함수 | 함수 내에서 자료형을 고정하지 않고, 호출 시 결정 |
+| <T> | Type Placeholder. 호출 시에 실제 자료형으로 바뀜 |
+| 장점 | 코드 재사용성 증가, 여러 타입에 유연하게 대응 |
+| 게임 예시 | 오브젝트 복사, 퀘스트 복사, 아이템 배열 등 다양하게 응용 가능 |
+
+------------------------------
+💬 마무리 한마디
+------------------------------
+이런 제네릭 함수 구조는 실무에서도 정말 자주 사용돼요!  
+한 번 만들어두면 다양한 타입에 쓸 수 있어서 유지보수도 편하고 깔끔해요.  
+Unity에서도 배열, 리스트, 데이터 처리할 때 자주 활용하니 꼭 익혀두자구요 😎💪

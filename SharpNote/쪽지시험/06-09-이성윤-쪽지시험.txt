@@ -1,0 +1,18 @@
+
+4.다음 코드의 출력 결과는 무엇일까요?
+1
+2
+3
+4
+5
+
+5.다음과 같은 결과를 출력하도록 아래의 코드를 완성하세요.
+    Hashtable ht2 = new Hashtable();
+    ht2["회사"] = "Microsoft";
+    ht2["URL"] = "www.microsoft.com";
+    Console.WriteLine("회사 : {0}", ht["회사"]);
+    Console.WriteLine("URL : {0}", ht["URL"]);
+    /*foreach (DictionaryEntry entry in ht2)
+    {
+        Console.WriteLine($"{entry.Key} : {entry.Value}");
+    }*/
