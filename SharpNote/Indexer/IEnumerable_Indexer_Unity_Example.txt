@@ -43,6 +43,18 @@ class MyList : IEnumerable, IEnumerator
 
     public object Current => arr[position];
 
+    object IEnumerator.Current => _array[position]!;
+
+    public void Dispose()
+{
+    //throw new NotImplementedException();
+}
+
+  public IEnumerator<T> GetEnumerator()
+  {
+      return this;
+  }
+
     public bool MoveNext()
     {
         if (position == arr.Length - 1)

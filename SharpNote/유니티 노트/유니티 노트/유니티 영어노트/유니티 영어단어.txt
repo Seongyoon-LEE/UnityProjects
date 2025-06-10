@@ -4,3 +4,7 @@ Enumerator: 열거
 Temp: 임시
 Collections : 배열과 비슷한 ArrayList
 arrayList : 자료형이 object임으로 박싱 언박싱이 일어나서 유니티에서 잘 안씀
+Dictionary: 사전
+exception: 예외
+attempted: 미수에 그친
+Argument: 논쟁, 논의

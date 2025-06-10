@@ -1,0 +1,19 @@
+1.가변길이 배열
+2.예외처리 try cath finally
+
+자료구조: 배열,리스트(데이터를 얼마나 관리잘하냐)
+알고리즘: 
+
+1.다음 코드에서 문제를 찾고, 그 원인을 설명하세요.
+Queue queue = new Queue();	// 자료형이 없음
+queue.Enqueue(10);
+queue.Enqueue("한글");
+queue.Enqueue(3.14);
+
+Queue<int> queue2 = new Queue<int>();
+queue2.Enqueue(10); 		// 자료형이 int인데 string과 float값이 들어감
+queue2.Enqueue("한글");
+queue2.Enqueue(3.14);
+
+2.다음 코드에서 1에 들어갈 내용은 무엇입니까?
+string,string

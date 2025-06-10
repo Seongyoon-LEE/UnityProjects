@@ -1,0 +1,120 @@
+
+==============================
+🧠 C# List<T> 완벽 정리 + 게임 예제 + 쉬운 설명
+==============================
+
+이 문서는 C#의 List<T> 자료구조에 대해 초등학생도 이해할 수 있도록 쉽게 정리한 자료입니다.  
+실제 코드, 출력 결과, 게임에서의 활용 예시까지 기똥차게 설명해드릴게요 😄
+
+------------------------------
+✅ List<T>란?
+------------------------------
+✔️ "리스트"는 순서를 가진 데이터들의 모음이에요.
+✔️ `List<T>`에서 `T`는 타입(type)을 뜻해요.  
+예: `List<int>`는 숫자(int)들을 담을 수 있는 리스트예요.
+
+✔️ 특징
+- 길이가 자동으로 늘어남 (배열은 고정인데 리스트는 늘어남)
+- 중간에 값을 삽입하거나 삭제할 수 있음
+- 반복문으로 쉽게 순회할 수 있음
+
+------------------------------
+🔸 예시 코드
+------------------------------
+```csharp
+List<int> list = new List<int>();
+for (int i = 0; i < 5; i++)
+{
+    list.Add(i); // 리스트에 i 값을 추가
+}
+
+foreach (int i in list)
+    Console.WriteLine(i);
+Console.WriteLine();
+
+list.Insert(2, 100); // 2번째 자리에 100 삽입
+foreach (int i in list)
+    Console.WriteLine(i);
+Console.WriteLine();
+
+list.RemoveAt(3); // 3번째 요소 삭제
+foreach (int i in list)
+    Console.WriteLine(i);
+Console.WriteLine();
+```
+
+------------------------------
+✔️ 출력 결과
+------------------------------
+```
+0
+1
+2
+3
+4
+
+0
+1
+100
+2
+3
+4
+
+0
+1
+100
+3
+4
+```
+
+------------------------------
+🎮 Unity 게임 예시
+------------------------------
+✔️ 예 1: 적 몬스터 리스트 관리
+```csharp
+List<GameObject> monsters = new List<GameObject>();
+monsters.Add(slime);
+monsters.Add(zombie);
+monsters.Remove(zombie); // 좀비 제거
+```
+
+✔️ 예 2: 플레이어 인벤토리 아이템 리스트
+```csharp
+List<string> inventory = new List<string>();
+inventory.Add("포션");
+inventory.Insert(0, "칼");
+inventory.RemoveAt(1); // 포션 삭제
+```
+
+✔️ 예 3: 퀘스트 진행 리스트
+```csharp
+List<string> questList = new List<string>() { "시작 퀘스트", "보스 퀘스트" };
+foreach (string quest in questList)
+{
+    Debug.Log(quest);
+}
+```
+
+------------------------------
+📌 피드백 & 꿀팁
+------------------------------
+✅ 리스트는 자주 바뀌는 데이터(추가, 삭제)에 정말 잘 어울려요!  
+✅ 배열처럼 인덱스로 접근도 가능하지만, 리스트는 더 많은 기능이 있어요.
+
+| 기능 | 메서드 |
+|------|--------|
+| 추가 | list.Add(item) |
+| 삽입 | list.Insert(index, item) |
+| 삭제 | list.Remove(item), list.RemoveAt(index) |
+| 전체 삭제 | list.Clear() |
+| 개수 확인 | list.Count |
+| 포함 여부 | list.Contains(item) |
+
+------------------------------
+✅ 마무리 한마디
+------------------------------
+리스트는 게임 개발에서도 **가장 많이 쓰는 자료형 중 하나**예요!  
+캐릭터 목록, 인벤토리, 적 풀링, 대사 리스트, 퀘스트 등등 전부 리스트로 관리할 수 있어요.  
+리스트만 잘 써도 게임 시스템 절반은 이해한 거예요 😎
+
+화이팅! 리스트로 게임 데이터 기가 막히게 다뤄보자 💪🎮
