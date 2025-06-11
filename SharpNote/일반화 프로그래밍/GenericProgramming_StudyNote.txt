@@ -1,0 +1,148 @@
+✅ 일반화(제네릭) 프로그래밍 + 델리게이트 정리 (게임 프로그래밍 취준생용)
+
+🎯 이 문서는 게임 프로그래밍 국비지원 교육을 듣는 입장에서, 기술 면접을 대비하여 "왜 일반화 프로그래밍이 중요한가?"를 이해하고, 실전 예제와 함께 공부할 수 있도록 구성한 정리 노트입니다.
+
+---
+
+# 1. 일반화(제네릭)이란? 왜 배워야 할까?
+
+강사님이 말씀하셨다:
+> "기술 면접 때 꼭 나옵니다. 일반화 프로그래밍은 무조건 할 줄 알아야 합니다!"
+
+🤔 왜 그럴까?
+- 게임에서 다양한 **데이터 타입**이 등장함 (ex. HP, 점수, 이름 등)
+- 같은 구조의 로직을 타입마다 따로 만들면 **유지보수가 힘들어짐**
+- 그래서 등장한 게 바로 **제네릭 프로그래밍(Generic Programming)**
+
+👉 즉, **타입에 상관없이 재사용 가능한 코드**를 만들 수 있는 기술!
+
+예시:
+```csharp
+public class Calculator<T> where T : INumber<T>
+{
+    public T Plus(T a, T b) => a + b;
+    public T Minus(T a, T b) => a - b;
+}
+```
+
+---
+
+# 2. 초등학생도 이해 가능한 제네릭 비유 🍎
+
+📦 상자 하나에 사과도, 귤도, 포도도 담을 수 있다면?  
+=> 상자 = `Calculator<T>`, 과일 = 타입 (int, double 등)
+
+✅ 이 상자는 단 하나만 만들면 된다!  
+❌ 단, 돌멩이(숫자가 아닌 타입)는 안 돼!  
+그래서 `where T : INumber<T>` 조건을 붙여준다 → 숫자만 넣을 수 있도록!
+
+---
+
+# 3. 게임 개발 예시 🎮
+
+예를 들어, 마법 공격 데미지를 계산한다고 하자.
+
+```csharp
+Calculator<int> intCalc = new Calculator<int>();
+int damage = intCalc.Minus(100, 20); // 일반 몬스터
+
+Calculator<double> doubleCalc = new Calculator<double>();
+double bossDamage = doubleCalc.Minus(150.5, 30.2); // 보스 몬스터
+```
+
+👆 하나의 `Calculator<T>`로 두 상황 모두 처리 가능!  
+복붙 안 하고도 깨끗하게 코드 재사용! 면접관이 좋아함 😎
+
+---
+
+# 4. 델리게이트도 일반화할 수 있다! 🎮
+
+델리게이트는 쉽게 말해 **함수를 전달하는 리모컨**!
+
+```csharp
+delegate int MyCalculator(int a, int b);
+```
+
+하지만 이것도 타입이 바뀌면 곤란하니까…
+
+✅ 제네릭으로 바꿔서 모든 숫자 타입 지원 가능하게!
+```csharp
+delegate T MyCalculator<T>(T a, T b) where T : INumber<T>;
+```
+
+---
+
+# 5. 버블 정렬도 일반화하자! 🔁
+
+기존 버블 정렬은 `int`만 됐음.
+이제 `int`, `double`, `string`까지 정렬 가능한 코드로 만들자!
+
+```csharp
+delegate int Compare<T>(T a, T b);
+
+static int Asend<T>(T a, T b) where T : IComparable<T> => a.CompareTo(b);
+static int Desend<T>(T a, T b) where T : IComparable<T> => a.CompareTo(b) * -1;
+
+static void BubbleSort<T>(T[] DataSet, Compare<T> compare)
+{
+    for (int i = 0; i < DataSet.Length - 1; i++)
+    {
+        for (int j = 0; j < DataSet.Length - i - 1; j++)
+        {
+            if (compare(DataSet[j], DataSet[j + 1]) > 0)
+            {
+                T temp = DataSet[j];
+                DataSet[j] = DataSet[j + 1];
+                DataSet[j + 1] = temp;
+            }
+        }
+    }
+}
+```
+
+---
+
+# 6. 실전 정렬 테스트! 🎯
+
+```csharp
+int[] array = { 5, 2, 9, 1, 5, 6 };
+BubbleSort(array, Asend); // 오름차순
+BubbleSort(array, Desend); // 내림차순
+
+double[] doubleArray = { 5.5, 2.2, 9.9, 1.1 };
+BubbleSort(doubleArray, Asend);
+
+string[] stringArray = { "apple", "orange", "banana", "grape" };
+BubbleSort(stringArray, Desend);
+```
+
+정렬 기준도 외부에서 전달하고, 타입도 마음대로 바꿔 쓸 수 있는 **최고의 재사용성**!
+
+---
+
+# 7. 핵심 요약표 🧠
+
+| 개념                        | 설명                             | 예시 |
+|---------------------------|--------------------------------|------|
+| `T`                       | 타입의 자리 표시자 (제네릭 타입)    | Calculator<T> |
+| `where T : INumber<T>`    | 숫자 타입만 받을 수 있게 제한       | int, double 등 |
+| `where T : IComparable<T>`| 정렬 가능한 타입만 제한            | int, string 등 |
+| 델리게이트                 | 함수를 전달하는 리모컨             | delegate int MyCalc(int a, int b) |
+| 제네릭 델리게이트           | 다양한 타입 함수도 전달 가능        | delegate T MyCalc<T>(T a, T b) |
+| Compare<T>                | 비교용 함수 전달 델리게이트         | Asend, Desend |
+
+---
+
+# 8. 면접관이 이런 걸 왜 물어볼까?
+
+- 실무에서는 코드 중복 최소화가 중요함
+- 특히 게임 개발에선 다양한 타입의 오브젝트, 수치, 이름 등 다뤄야 해서 필수!
+- `제네릭 + 델리게이트`를 알고 있는 지원자는 **객체지향과 재사용성 이해가 깊은 개발자**로 보임
+
+✅ "왜 이렇게 했나요?" 라고 물으면 이렇게 답하자:
+> "타입마다 함수 만드는 건 유지보수에 불리해서 제네릭으로 묶었고, 정렬 기준도 델리게이트로 넘겨서 재사용성 높였습니다."
+
+---
+
+화이팅! 🔥 이 개념 하나만 제대로 이해하고 정리해도 기술 면접 준비 절반은 끝났어!  
+게임 개발자 취준생으로서 이건 반드시 챙기고 가자! 🎮💻

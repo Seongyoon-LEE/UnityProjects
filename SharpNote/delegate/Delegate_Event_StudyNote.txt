@@ -1,0 +1,105 @@
+✅ delegate + event 완전 정리노트 (게임 프로그래밍 취준생용)
+
+🎯 이 문서는 Unity 개발과 C# 면접에 꼭 나오는 delegate와 event의 차이와 함께, 실전 예제를 쉽게 정리한 노트입니다.
+
+---
+
+# 1. delegate란? 🎮
+
+- 델리게이트는 **함수를 변수처럼 다룰 수 있는 C# 기능**.
+- 이벤트가 발생했을 때 어떤 행동을 할지 "리모컨"처럼 연결할 수 있음.
+
+```csharp
+delegate void EventHandler(string message);
+```
+
+---
+
+# 2. event란? 🔔
+
+- **이벤트는 델리게이트를 더 안전하게 만든 버전**
+- 클래스 내부에서만 호출 가능! 외부에서는 `+=`, `-=` 만 가능하고 직접 실행은 불가능함.
+- Unity에서도 UI 이벤트, 트리거 등에서 자주 사용됨!
+
+```csharp
+public event EventHandler? SomethingHappend;
+```
+
+---
+
+# 3. 실전 예제 해설 ✨
+
+```csharp
+class MyNotifier
+{
+    public event EventHandler? SomethingHappend;
+
+    public void DoSomething(int number)
+    {
+        int temp = number % 10;
+        if (temp != 0 && temp % 3 == 0)
+        {
+            SomethingHappend!(String.Format("{0}: 3의 배수.", number));
+        }
+    }
+}
+```
+
+```csharp
+notifier.SomethingHappend += new EventHandler(MyHandler); // 이벤트 핸들러 연결
+```
+
+✅ 출력:
+```
+3: 3의 배수.
+6: 3의 배수.
+...
+93: 3의 배수.
+96: 3의 배수.
+99: 3의 배수.
+```
+
+---
+
+# 4. Unity 게임 예시 🎮
+
+```csharp
+public event Action OnBossDefeated;
+
+void DefeatBoss()
+{
+    OnBossDefeated?.Invoke(); // 이벤트 발생
+}
+```
+
+- 보스 처치 → 사운드 재생, 클리어 UI, 점수 저장 등 여러 기능 연결 가능!
+
+```csharp
+boss.OnBossDefeated += PlayVictorySound;
+boss.OnBossDefeated += ShowClearUI;
+boss.OnBossDefeated += SaveScore;
+```
+
+---
+
+# 5. delegate vs event 비교표 🧠
+
+| 구분      | delegate                        | event                                     |
+|-----------|----------------------------------|-------------------------------------------|
+| 호출 위치 | 외부에서 호출 가능              | 클래스 내부에서만 호출 가능               |
+| 연결 방법 | +=, -=                           | +=, -= (동일)                              |
+| 사용 목적 | 일반적인 함수 참조               | 특정 상황(이벤트) 발생 시 알림 용도       |
+| 보안성    | 낮음 (외부 조작 가능)           | 높음 (내부에서만 실행 가능)               |
+| Unity 사용 | 덜 사용 (기초 학습 단계)        | ✅ UI, 트리거, 애니메이션, 이벤트 시스템 |
+
+---
+
+# 6. 면접에서 이렇게 설명하자 🎙️
+
+> "delegate는 함수 포인터처럼 메서드를 저장하고 실행할 수 있게 해주는 도구이고, event는 delegate를 외부에서 안전하게 사용하도록 제한한 구조입니다. Unity에서 많이 쓰이는 이벤트 시스템은 이 구조를 기반으로 작동합니다."
+
+---
+
+정리 끝!  
+이벤트 시스템은 **Unity 게임 개발 실무에서도 자주 등장**하니 완벽하게 이해해두자 💪  
+이제 delegate와 event도 자신 있게 설명할 수 있어요! 🚀

@@ -1,0 +1,88 @@
+✅ 익명 메서드 + Func<T, T, int> + 제네릭 버블 정렬 정리노트 (게임 개발 취준생용)
+
+🎯 이 문서는 게임 프로그래밍 국비 과정 수강생이 익명 메서드와 일반화 정렬을 어떻게 활용하고, 기술면접에서 이를 어떻게 설명할 수 있는지를 정리한 노트입니다!
+
+---
+
+# 1. 목표: 정렬 알고리즘을 '한 번만' 작성해서 모든 타입에서 재사용하기 🔁
+
+- 기존엔 `int` 전용 버블 정렬만 가능했음
+- 이를 `T`로 일반화하고, 정렬 기준은 `Func<T, T, int>` 형태의 **익명 메서드(람다)**로 외부에서 전달!
+
+---
+
+# 2. 핵심 코드 요약 ✨
+
+```csharp
+static void BubbleSort<T>(T[] DataSet, Func<T, T, int> Compare)
+    where T : IComparable<T>
+```
+
+- `Func<T, T, int>` : 두 값을 비교해서 int(양수/0/음수)를 반환하는 함수
+- `where T : IComparable<T>` : 비교가 가능한 타입만 정렬 허용
+
+---
+
+# 3. 익명 메서드 예시 🌟
+
+```csharp
+BubbleSort(array, (a, b) => a.CompareTo(b)); // 오름차순
+BubbleSort(array, (a, b) => b.CompareTo(a)); // 내림차순
+```
+
+- 코드 간결하고, 외부에서 비교 기준을 유연하게 바꿀 수 있음
+- 정렬 기준을 전달하니 '전략 패턴'과도 비슷한 구조!
+
+---
+
+# 4. 전체 사용 예시 🎮
+
+```csharp
+int[] array = { 5, 2, 9, 1, 5, 6 };
+BubbleSort(array, (a, b) => a.CompareTo(b)); // 오름차순
+BubbleSort(array, (a, b) => b.CompareTo(a)); // 내림차순
+
+string[] strArray = { "apple", "orange", "banana", "grape" };
+BubbleSort(strArray, (a, b) => a.CompareTo(b)); // 오름차순
+BubbleSort(strArray, (a, b) => b.CompareTo(a)); // 내림차순
+```
+
+✅ `int`, `string` 모두 동일한 정렬 알고리즘으로 처리! 진짜 일반화 완료 🔥
+
+---
+
+# 5. 게임 예시 🎮
+
+- 아이템 이름 정렬 (string)
+- 점수 내림차순 정렬 (int)
+- 캐릭터 속도 오름차순 정렬 (float, double)
+
+전부 하나의 정렬 함수로 처리 가능!
+```csharp
+BubbleSort(scoreList, (a, b) => b.CompareTo(a)); // 점수 높은 순
+BubbleSort(nameList, (a, b) => a.CompareTo(b));  // 이름 순
+```
+
+---
+
+# 6. 핵심 정리표 🧠
+
+| 개념 | 설명 | 예시 |
+|------|------|------|
+| `T` | 일반화된 타입 | int, string, double |
+| `Func<T, T, int>` | 비교 기준 함수 | (a, b) => a.CompareTo(b) |
+| 익명 메서드 | 함수 이름 없이 즉석에서 작성 | delegate / 람다 |
+| `IComparable<T>` | 비교 가능한 타입으로 제한 | CompareTo 사용 |
+| 오름차순 정렬 | 작은 값이 앞 | `(a, b) => a.CompareTo(b)` |
+| 내림차순 정렬 | 큰 값이 앞 | `(a, b) => b.CompareTo(a)` |
+
+---
+
+# 7. 면접에서 이렇게 말하자 🎙️
+
+> "정렬 기준을 외부에서 전달받게 만들어서 코드 재사용성을 높였고, 다양한 타입에서도 유연하게 사용할 수 있도록 제네릭과 Func를 활용했습니다."
+
+---
+
+이제 정렬도, 델리게이트도, 익명 메서드도 전부 실전처럼 다룰 수 있어요!  
+게임 개발자 취업을 위한 기술 준비, 여기서 한 걸음 더 성장! 🚀
