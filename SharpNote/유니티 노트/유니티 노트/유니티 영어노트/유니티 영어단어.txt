@@ -8,3 +8,6 @@ Dictionary: 사전
 exception: 예외
 attempted: 미수에 그친
 Argument: 논쟁, 논의
+Concatenate: 연쇄시키다, 연결시키다
+obstacle: 장애물
+phase: 단계
