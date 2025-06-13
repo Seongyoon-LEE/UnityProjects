@@ -8,3 +8,4 @@ Dictionary: 사전
 exception: 예외
 attempted: 미수에 그친
 Argument: 논쟁, 논의
+Magnitude: 규모,크기
