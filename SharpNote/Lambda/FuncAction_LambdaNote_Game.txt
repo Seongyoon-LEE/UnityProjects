@@ -1,0 +1,115 @@
+✅ Func & Action 람다식 완전 정리노트 (초등학생도 이해할 수 있는 설명 + 게임 예시 포함)
+
+🎯 이 문서는 C#에서 자주 사용하는 Func와 Action 델리게이트를 람다식으로 어떻게 사용하는지 쉽게 설명합니다.  
+게임 개발 실무에서 어떻게 활용되는지도 예제와 함께 알려줄게요!
+
+---
+
+# 1. Func와 Action이 뭐야?
+
+| 타입 | 뜻 | 리턴값 있음? | 언제 사용? |
+|------|----|-------------|------------|
+| `Func` | 값을 계산해서 돌려주는 함수 | ✅ 있음 | 예: 데미지 계산, 점수 합산 |
+| `Action` | 그냥 실행만 하고 끝나는 함수 | ❌ 없음 | 예: 메시지 출력, 버튼 누르기 처리 |
+
+---
+
+# 2. Func 예제 🎯
+
+### ✅ 예제 1: 입력 없음, 결과만 있음
+```csharp
+Func<int> func1 = () => 42;
+Console.WriteLine(func1()); // 출력: 42
+```
+
+🧒 설명: 아무것도 안 받고 무조건 42를 돌려줘요!
+
+---
+
+### ✅ 예제 2: 숫자 하나 받아서 2배로
+```csharp
+Func<int, int> func2 = x => x * 2;
+Console.WriteLine(func2(4)); // 출력: 8
+```
+
+---
+
+### ✅ 예제 3: 두 개의 숫자 더하기
+```csharp
+Func<double, double, double> func3 = (x, y) => x + y;
+Console.WriteLine(func3(3.14, 2.71)); // 출력: 5.85
+```
+
+---
+
+# 3. Action 예제 ✨
+
+### ✅ 예제 1: 아무것도 안 받고 그냥 실행
+```csharp
+Action action1 = () => Console.WriteLine("Hello, World!");
+action1(); // 출력: Hello, World!
+```
+
+---
+
+### ✅ 예제 2: 숫자 하나 받아서 외부 변수에 더하기
+```csharp
+int result = 0;
+Action<int> action2 = x => result += x;
+action2(10);
+Console.WriteLine(result); // 출력: 10
+```
+
+---
+
+### ✅ 예제 3: 두 숫자 받아서 비율 출력
+```csharp
+Action<double, double> action3 = (x, y) =>
+{
+    double pi = x / y;
+    Console.WriteLine($"x: {x}, y: {y} : {pi}");
+};
+action3(3.14, 2.71);
+```
+
+---
+
+# 4. 게임 예시 🎮
+
+## ✅ Func 예시
+
+```csharp
+Func<int, int> getDamage = basePower => basePower * 2;
+int finalDamage = getDamage(50); // 100
+```
+
+## ✅ Action 예시
+
+```csharp
+Action onEnemyDefeated = () => {
+    Debug.Log("적 처치!");
+    player.AddExp(100);
+};
+onEnemyDefeated();
+```
+
+---
+
+# 5. 초등학생 설명 요약표 🧠
+
+| 개념 | 뜻 | 예시 |
+|------|----|------|
+| Func | 계산하고 값을 돌려주는 함수 | (x, y) => x + y |
+| Action | 실행만 하고 끝나는 함수 | () => Console.WriteLine("Hi") |
+| 람다식 | 이름 없이 간단하게 함수 쓰는 방식 | (a, b) => a * b |
+
+---
+
+# 6. 면접에서 이렇게 말하자 🎙️
+
+> "Func와 Action을 활용하면 델리게이트를 짧고 간단하게 정의할 수 있어 코드가 깔끔해지고, 이벤트 처리나 UI 콜백에서 자주 사용됩니다."
+
+---
+
+이제 Func와 Action도 완벽하게 이해했지?  
+실제 게임에서도 람다식으로 이벤트 처리와 데이터 계산을 많이 하니까 꼭 손에 익혀두자! 💪🎮
