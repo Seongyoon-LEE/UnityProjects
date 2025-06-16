@@ -1,0 +1,91 @@
+
+📘 [C# LINQ 예제 총정리 - 초등학생도 이해할 수 있게!]
+
+이 프로그램은 여러 가지 데이터를 LINQ로 쉽게 뽑아서 보기 좋게 출력하는 방법을 보여줘요.
+총 3가지 예제가 있어요!
+
+------------------------------------------------------------
+🔷 [예제 1] 자동차(Car) 정보 중 조건에 맞는 것만 출력하기
+------------------------------------------------------------
+// 자동차 가격과 최고 속도 정보를 가진 배열
+Car[] cars = {
+    new Car() {Cost = 56, MaxSpeed = 120},
+    new Car() {Cost = 70, MaxSpeed = 150},
+    ...
+};
+
+// 가격이 50 이상이고 최고속도가 150 이상인 자동차만 뽑기
+var selected = from car in cars
+               where car.Cost >= 50 && car.MaxSpeed >= 150
+               select new { car.Cost, car.MaxSpeed };
+
+// 출력 예시
+foreach (var car in selected)
+    Console.WriteLine($"가격: {car.Cost}, 최고속도: {car.MaxSpeed}");
+
+➡ 조건에 맞는 자동차만 출력돼요!
+
+------------------------------------------------------------
+🔷 [예제 2] 학급(Class) 성적 중 합격/낙제 점수 분리 출력하기
+------------------------------------------------------------
+Class[] arrClass = {
+    new Class(){Name = "연두반", Score = new int[]{99,80,70,24} },
+    new Class(){Name = "분홍반", Score = new int[]{60,45,87,72} },
+    ...
+};
+
+// 각 학급마다 합격/낙제 점수 나누기
+var scoresByClass = from c in arrClass
+    select new {
+        ClassName = c.Name,
+        PassedScores = from s in c.Score where s >= 60 select s,
+        FailedScores = from s in c.Score where s < 60 select s
+    };
+
+// 출력
+foreach (var c in scoresByClass)
+{
+    Console.WriteLine($"학급명 : {c.ClassName}");
+    Console.WriteLine($"합격 60점 이상 : {string.Join(",", c.PassedScores)}");
+    Console.WriteLine($"낙제 60점 미만 : {string.Join(",", c.FailedScores)}");
+}
+
+➡ string.Join은 숫자들을 "문자열"로 묶어주는 함수예요.
+   예: [60,70,80] ➡ "60,70,80"
+
+------------------------------------------------------------
+🔷 [예제 3] 사람들 키 정보를 기준으로 그룹 나누기 (175cm 기준)
+------------------------------------------------------------
+Profile[] arrProfile = {
+    new Profile() {Name = "정우성", Height = 186},
+    new Profile() {Name = "이정재", Height = 178},
+    ...
+};
+
+// 키가 175cm 미만/이상인 사람들로 나누기 (group by)
+var listProfile = from profile in arrProfile
+                  orderby profile.Height
+                  group profile by profile.Height < 175 into g
+                  select new { GroupKey = g.Key, Profiles = g };
+
+foreach (var Group in listProfile)
+{
+    Console.WriteLine($"--175cm 미만 ? : {Group.GroupKey}");
+    foreach (var profile in Group.Profiles)
+    {
+        Console.WriteLine($">>> {profile.Name},{profile.Height}");
+    }
+}
+
+➡ group by는 데이터를 기준에 따라 모아서 그룹으로 나눠줘요.
+   여기선 키가 175cm 이상인 그룹 / 미만인 그룹 2개로 나뉘어요.
+
+------------------------------------------------------------
+✅ 정리 요약
+------------------------------------------------------------
+📌 LINQ는 데이터를 "조건에 따라 뽑기" "정렬하기" "나누기" 등에 매우 유용해요!
+📌 select, where, group by 등을 사용하면 아주 깔끔하게 코드 작성 가능!
+📌 string.Join은 숫자 배열을 보기 좋은 문자열로 바꿔줄 때 사용!
+📌 group 키는 true/false 등 조건 결과에 따라 그룹을 나누는 기준이 돼요!
+
+🎉 LINQ에 조금 익숙해졌다면, 이제 직접 데이터 받아서 뽑아보는 연습도 해보자!

@@ -1,0 +1,15 @@
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.sourcelink.json
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\bin\Debug\net8.0\06-16-CSharpLinq.exe
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\bin\Debug\net8.0\06-16-CSharpLinq.deps.json
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\bin\Debug\net8.0\06-16-CSharpLinq.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\bin\Debug\net8.0\06-16-CSharpLinq.dll
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\bin\Debug\net8.0\06-16-CSharpLinq.pdb
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.dll
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\refint\06-16-CSharpLinq.dll
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.pdb
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\06-16-CSharpLinq.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\06-16-CSharpLinq\obj\Debug\net8.0\ref\06-16-CSharpLinq.dll

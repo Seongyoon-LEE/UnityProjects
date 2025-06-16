@@ -1,0 +1,90 @@
+
+📘 [C# LINQ를 이용한 키 정렬 프로그램 설명]
+
+이 코드는 "사람들 이름과 키"가 들어 있는 데이터를 정리해보는 프로그램이에요.
+사람마다 이름(Name)과 키(Height)를 가지고 있고, LINQ를 사용해서 쉽게 조건을 주고 정렬해볼 수 있어요.
+
+---------------------------
+🔷 1. Profile 클래스 만들기
+---------------------------
+// 사람 정보를 담을 클래스예요.
+class Profile
+{
+    public string Name { get; set; }  // 이름 (예: 정우성)
+    public int Height { get; set; }   // 키 (예: 186)
+}
+
+➡ 이름과 키를 저장할 수 있는 틀을 만드는 거예요.
+
+---------------------------
+🔷 2. Main 함수 (프로그램 시작)
+---------------------------
+static void Main(string[] args)
+{
+    Profile[] arrProfile =
+    {
+        new Profile() {Name = "정우성", Height = 186},
+        new Profile() {Name = "이정재", Height = 178},
+        new Profile() {Name = "김혜수", Height = 170},
+        new Profile() {Name = "이병헌", Height = 175},
+        new Profile() {Name = "하하", Height = 171},
+    };
+
+➡ 이렇게 5명의 이름과 키를 미리 저장해놓았어요.
+   배열(arrProfile)은 여러 개의 Profile을 담을 수 있어요.
+
+---------------------------
+🔷 3. LINQ를 이용한 정렬 (예시)
+---------------------------
+// LINQ를 사용하면 원하는 조건만 쉽게 꺼내올 수 있어요.
+
+예제 1)
+키가 175보다 작은 사람들만 보기:
+var profiles = from profile in arrProfile
+               where profile.Height < 175
+               orderby profile.Height
+               select profile;
+
+foreach(Profile profile in profiles)
+{
+    Console.WriteLine($"{profile.Name}:{profile.Height}");
+}
+
+➡ 설명:
+- profile in arrProfile : 배열에서 하나씩 꺼내기
+- where : 조건을 줘서 175보다 작은 키만 고르기
+- orderby : 키가 작은 순서대로 정렬하기
+- select : 꺼낸 사람을 그대로 선택하기
+
+결과:
+김혜수:170
+하하:171
+
+예제 2)
+키가 175 이상인 사람을 "인치"로 보여주기:
+var profiles = from profile in arrProfile
+               where profile.Height >= 175
+               orderby profile.Height descending
+               select new
+               {
+                   Name = profile.Name,
+                   InchHeight = profile.Height * 0.393701
+               };
+
+foreach (var profile in profiles)
+    Console.WriteLine($"{profile.Name} {profile.InchHeight}");
+
+➡ 설명:
+- select new : 새롭게 만들기 (이름 + 키를 인치로 바꿔서 보여주기)
+- 1cm = 0.393701 inch
+- descending : 큰 키부터 작은 순서로 보여주기
+
+---------------------------
+🌟 피드백
+---------------------------
+1. List 사용법과 LINQ 둘 다 써보며 연습한 건 아주 좋아요!
+2. LINQ는 훨씬 간단하고 깔끔하게 조건/정렬을 할 수 있어요.
+3. 키 단위를 바꾸는 등 데이터 변환 연습도 아주 좋아요.
+4. 코드를 주석처리하고 비교해보는 연습은 이해에 큰 도움이 돼요.
+
+👍 다음에는 사용자 입력으로 이름과 키를 직접 받아서 정렬해보는 것도 도전해보면 좋아요!

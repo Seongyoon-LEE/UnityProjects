@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D79A2F8-3266-4FC6-AC1D-2EF4216A861F}|06-16-CSharpLinq.csproj|c:\\users\\wd\\documents\\csharpbase\\06-16-csharplinq\\mainapp2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D79A2F8-3266-4FC6-AC1D-2EF4216A861F}|06-16-CSharpLinq.csproj|solutionrelative:mainapp2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D79A2F8-3266-4FC6-AC1D-2EF4216A861F}|06-16-CSharpLinq.csproj|c:\\users\\wd\\documents\\csharpbase\\06-16-csharplinq\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D79A2F8-3266-4FC6-AC1D-2EF4216A861F}|06-16-CSharpLinq.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D79A2F8-3266-4FC6-AC1D-2EF4216A861F}|06-16-CSharpLinq.csproj|c:\\users\\wd\\documents\\csharpbase\\06-16-csharplinq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D79A2F8-3266-4FC6-AC1D-2EF4216A861F}|06-16-CSharpLinq.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainApp2.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\MainApp2.cs",
+              "RelativeDocumentMoniker": "MainApp2.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\MainApp2.cs",
+              "RelativeToolTip": "MainApp2.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwGgAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T03:33:34.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainApp.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\MainApp.cs",
+              "RelativeDocumentMoniker": "MainApp.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\MainApp.cs",
+              "RelativeToolTip": "MainApp.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T02:17:58.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\WD\\Documents\\CSharpBase\\06-16-CSharpLinq\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:04:12.46Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
