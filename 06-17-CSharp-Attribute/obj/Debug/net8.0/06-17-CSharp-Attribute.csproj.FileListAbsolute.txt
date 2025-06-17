@@ -1,0 +1,15 @@
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.AssemblyInfoInputs.cache
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.AssemblyInfo.cs
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.sourcelink.json
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\bin\Debug\net8.0\06-17-CSharp-Attribute.exe
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\bin\Debug\net8.0\06-17-CSharp-Attribute.deps.json
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\bin\Debug\net8.0\06-17-CSharp-Attribute.runtimeconfig.json
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\bin\Debug\net8.0\06-17-CSharp-Attribute.dll
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\bin\Debug\net8.0\06-17-CSharp-Attribute.pdb
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.dll
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\refint\06-17-CSharp-Attribute.dll
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.pdb
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\06-17-CSharp-Attribute.genruntimeconfig.cache
+C:\Users\WD\Documents\CSharpBase\06-17-CSharp-Attribute\obj\Debug\net8.0\ref\06-17-CSharp-Attribute.dll
