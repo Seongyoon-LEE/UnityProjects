@@ -11,3 +11,4 @@ Argument: 논쟁, 논의
 Magnitude: 규모,크기
 Obsolete: 더이상 쓸모가 없는
 modify : 수정하다
+impulse: 충격, 충동
