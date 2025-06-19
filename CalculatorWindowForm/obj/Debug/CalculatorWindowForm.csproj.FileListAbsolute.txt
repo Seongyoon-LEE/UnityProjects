@@ -1,0 +1,10 @@
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\bin\Debug\CalculatorWindowForm.exe.config
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\bin\Debug\CalculatorWindowForm.exe
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\bin\Debug\CalculatorWindowForm.pdb
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.csproj.AssemblyReference.cache
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.Form1.resources
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.Properties.Resources.resources
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.csproj.GenerateResource.cache
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.csproj.CoreCompileInputs.cache
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.exe
+C:\Users\WD\Documents\CSharpBase\CalculatorWindowForm\obj\Debug\CalculatorWindowForm.pdb
