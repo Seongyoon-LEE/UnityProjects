@@ -13,3 +13,8 @@ Obsolete: 더이상 쓸모가 없는
 modify : 수정하다
 impulse: 충격, 충동
 Trim: 다듬다
+interpolate: 보간하다, 말참견하다
+configure: 환경을 설정하다
+Stale: 오래된, 신선하지않은
+Magnitude: 크기, 규모
+Pending: (어떤 일이) 있을 때 까지, …을 기다리는 동안
